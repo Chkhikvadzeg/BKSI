@@ -61,6 +61,7 @@
 
 .burger-menu.active {
     display: block;
+    z-index: 1000;
 }
 
 .header-top {
