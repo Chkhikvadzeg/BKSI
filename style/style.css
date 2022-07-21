@@ -111,9 +111,13 @@ ul.dashed > li:before {
     left: 0;
 }
 
+.text-fade {
+    overflow: hidden;
+}
+
 .text-content-fade {
-    transform: translateY(300px);
-    transition: 1s cubic-bezier(.215,.61,.355,1);
+    transform: translateY(1000px);
+    transition: 1.2s cubic-bezier(.215,.61,.355,1);
 }
 
 .text-content-fade.active {
