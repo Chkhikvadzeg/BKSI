@@ -124,6 +124,14 @@ ul.dashed > li:before {
     transform: translateY(0);
 }
 
+.project-dropdown.active {
+    border-radius: 24px 24px 0 0;
+}
+
+.project-dropdown.active > ul {
+    display: block;
+}
+
 @media screen and (min-width: 768px) {
     .header-top.active {
         background-color: transparent;
