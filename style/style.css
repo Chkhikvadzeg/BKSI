@@ -65,11 +65,16 @@
 }
 
 .header-top {
-    transition: none;
+    transition: top .3s ease-out;
 }
 
 .header-top.active {
     background-color: #191428;
+}
+
+.header-top.active-scroll {
+    background-color: #191428;
+    z-index: 1000;
 }
 
 .dropdown-content {
