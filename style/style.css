@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     transition: all .3s ease-out;
+}
+
+ul.dashed > li {
+    text-indent: -5px;
+}
+ul.dashed > li:before {
+    content: "-";
+    margin-right: 5px;
 }
 
 .search-container{

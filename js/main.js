@@ -20,7 +20,12 @@ const burgerMenu = () => {
     hamburger.classList.toggle('active');
     burgerMenuShown.classList.toggle('active');
     headerTop.classList.toggle('active');
-}
+    if(headerTop.style.background === 'transparent none repeat scroll 0% 0%'){
+    headerTop.style.background = '#191428'
+    }else{
+      headerTop.style.background = 'transparent none repeat scroll 0% 0%'
+    }
+  }
 dropDownButton.forEach(n => n.addEventListener('click', () => {
     n.parentElement.parentElement.classList.toggle('active');
 }))
@@ -30,8 +35,8 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   // Appearing Header on scrolling up and dissapearing when scrolling down.
 let currentScrollPos = window.pageYOffset;
-  if(prevScrollpos < 40){
-    headerTop.style.background = 'transparent';
+  if(prevScrollpos < headerTop.clientHeight){
+    headerTop.style.background = 'transparent';      
     headerTop.style.top = `0px`;
     headerTop.style.position = 'relative'
   }else if (prevScrollpos > currentScrollPos) {
@@ -40,9 +45,9 @@ let currentScrollPos = window.pageYOffset;
     headerTop.style.position = 'fixed'
     headerTop.style.zIndex = '9999'
   } else {
-    headerTop.style.background = 'transparent';
-        headerTop.style.top = `-${headerTop.clientHeight}px`;
-        headerTop.style.position = 'relative'
+    headerTop.style.background = 'transparent';      
+    headerTop.style.top = `-${headerTop.clientHeight}px`;
+    headerTop.style.position = 'relative'
   }
   prevScrollpos = currentScrollPos;
 
@@ -55,7 +60,7 @@ let currentScrollPos = window.pageYOffset;
   })
   // Fading up text when bottom reaches text's containers top.
   textContentFadeList.forEach(n => {
-    let textContainerTop = n.parentElement.getBoundingClientRect().top;
+    let textContainerTop = n.getBoundingClientRect().top;
     if(textContainerTop < window.scrollY){
       n.classList.add('active');
     }
