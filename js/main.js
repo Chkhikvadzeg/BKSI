@@ -6,7 +6,7 @@ const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
 const fadeInIMageContainersList = document.querySelectorAll('.fade-in-image-container');
 const fadeInImagesList = document.querySelectorAll('.fade-in-image');
-const textContentFadeList = document.querySelectorAll('.text-content-fade');
+const textContentFadeList = document.querySelectorAll('.text-fade');
 
 const searchWidth = () => {
     searchContainer.classList.add("active");
@@ -60,9 +60,9 @@ let currentScrollPos = window.pageYOffset;
   })
   // Fading up text when bottom reaches text's containers top.
   textContentFadeList.forEach(n => {
-    let textContainerTop = n.getBoundingClientRect().top;
+    let textContainerTop = n.getBoundingClientRect().top + n.clientHeight/3;
     if(textContainerTop < window.scrollY){
-      n.classList.add('active');
+      n.children[0].classList.add('active');
     }
   })
 }
