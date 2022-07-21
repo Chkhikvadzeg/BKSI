@@ -1164,6 +1164,15 @@ video {
   left: 0;
 }
 
+.text-content-fade {
+  transform: translateY(150px);
+  transition: .8s cubic-bezier(.215,.61,.355,1);
+}
+
+.text-content-fade.active {
+  transform: translateY(0);
+}
+
 @media screen and (min-width: 768px) {
   .header-top.active {
     background-color: transparent;
