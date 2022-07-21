@@ -4,6 +4,8 @@ const hamburger = document.querySelector('.hamburger')
 const burgerMenuShown = document.querySelector('.burger-menu')
 const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
+const fadeInIMageContainersList = document.querySelectorAll('.fade-in-image-container');
+const fadeInImagesList = document.querySelectorAll('.fade-in-image');
 
 const searchWidth = () => {
     searchContainer.classList.add("active");
@@ -23,9 +25,10 @@ dropDownButton.forEach(n => n.addEventListener('click', () => {
 }))
 
 
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+  // Appearing Header on scrolling up and dissapearing when scrolling down.
+let currentScrollPos = window.pageYOffset;
   if(prevScrollpos < 40){
     headerTop.style.background = 'transparent';
     headerTop.style.top = `0px`;
@@ -41,5 +44,13 @@ var currentScrollPos = window.pageYOffset;
         headerTop.style.position = 'relative'
   }
   prevScrollpos = currentScrollPos;
-  
+
+  // Appearing Fading in images when bottom reaches photo's containers top.
+  let windowHeight = window.innerHeight;
+  fadeInIMageContainersList.forEach(n => {
+    let photoContainerTop = n.getBoundingClientRect().top;
+    if(photoContainerTop < window.scrollY){
+      n.classList.add('active');
+    }
+  })
 }
