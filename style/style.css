@@ -100,8 +100,8 @@
 }
 
 .text-content-fade {
-    transform: translateY(150px);
-    transition: .8s cubic-bezier(.215,.61,.355,1);
+    transform: translateY(300px);
+    transition: 1s cubic-bezier(.215,.61,.355,1);
 }
 
 .text-content-fade.active {
