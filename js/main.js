@@ -30,11 +30,14 @@ dropDownButton.forEach(n => n.addEventListener('click', () => {
     n.parentElement.parentElement.classList.toggle('active');
 }))
 
-if(!hamburger.classList.contains('active')){
   let prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
+
+window.onscroll = function() {
+  if(!hamburger.classList.contains('active')){
+
+    console.log('i was here')
     // Appearing Header on scrolling up and dissapearing when scrolling down.
-  let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
     if(prevScrollpos < headerTop.clientHeight){
       headerTop.style.background = 'none';      
       headerTop.style.top = `0px`;
@@ -48,7 +51,7 @@ if(!hamburger.classList.contains('active')){
       headerTop.style.top = `-${headerTop.clientHeight}px`;
     }
     prevScrollpos = currentScrollPos;
-  
+
     // Fading in images when bottom reaches photo's containers top.
     fadeInIMageContainersList.forEach(n => {
       let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
