@@ -2,5 +2,8 @@
   "devDependencies": {
     "tailwindcss": "^3.1.6",
     "tailwindcss-hyphens": "^0.1.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.0.7"
   }
 }
