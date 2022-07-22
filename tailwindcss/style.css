@@ -686,6 +686,10 @@ video {
   margin-bottom: 100px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -694,36 +698,8 @@ video {
   margin-right: 1.25rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[1\] {
-  margin-bottom: 1;
-}
-
-.mb-\[100\] {
-  margin-bottom: 100;
-}
-
-.mb-\[1000\] {
-  margin-bottom: 1000;
-}
-
-.mb-\[100p\] {
-  margin-bottom: 100p;
 }
 
 .block {
@@ -766,48 +742,8 @@ video {
   height: 50vh;
 }
 
-.h-\[300vh\] {
-  height: 300vh;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-\[30vh\] {
   height: 30vh;
-}
-
-.h-\[20vh\] {
-  height: 20vh;
-}
-
-.h-\[3vh\] {
-  height: 3vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[2\] {
-  height: 2;
-}
-
-.h-\[25\] {
-  height: 25;
-}
-
-.h-\[25v\] {
-  height: 25v;
-}
-
-.h-\[25vh\] {
-  height: 25vh;
 }
 
 .min-h-\[calc\(100vh-82px\)\] {
@@ -860,10 +796,6 @@ video {
   width: 1.25rem;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -878,10 +810,6 @@ video {
   max-width: fit-content;
 }
 
-.basis-5 {
-  flex-basis: 1.25rem;
-}
-
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -889,11 +817,6 @@ video {
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-y-full {
-  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -973,26 +896,6 @@ video {
   gap: 5rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[7\] {
-  gap: 7;
-}
-
-.gap-\[75\] {
-  gap: 75;
-}
-
-.gap-\[75p\] {
-  gap: 75p;
-}
-
 .gap-\[75px\] {
   gap: 75px;
 }
@@ -1027,10 +930,6 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-b-3xl {
@@ -1386,12 +1285,14 @@ ul.dashed > li:before {
 
 .fade-in-image {
   position: absolute;
-  left: -100%;
-  transition: 1.2s cubic-bezier(.645,.045,.355,1);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 2s cubic-bezier(.645,.045,.355,1);
 }
 
 .fade-in-image-container.active .fade-in-image {
-  left: 0;
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .text-fade {
@@ -1400,11 +1301,13 @@ ul.dashed > li:before {
 
 .text-content-fade {
   transform: translateY(1000px);
-  transition: 1.2s cubic-bezier(.215,.61,.355,1);
+  opacity: 0;
+  transition: all 2s cubic-bezier(.215,.61,.355,1);
 }
 
 .text-content-fade.active {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .project-dropdown.active {
@@ -1443,16 +1346,6 @@ ul.dashed > li:before {
 
 .group:hover .group-hover\:w-full {
   width: 100%;
-}
-
-.group:hover .group-hover\:translate-y-full {
-  --tw-translate-y: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:translate-y-0 {
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:scale-90 {
@@ -1520,10 +1413,6 @@ ul.dashed > li:before {
     display: flex;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:hidden {
     display: none;
   }
@@ -1550,10 +1439,6 @@ ul.dashed > li:before {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[250px\] {
-    width: 250px;
   }
 
   .md\:max-w-\[790px\] {
