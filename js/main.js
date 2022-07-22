@@ -16,53 +16,52 @@ const closeSearch = () => {
 }
 
 const burgerMenu = () => {
-    headerTop.style.position = 'relative';
+    headerTop.style.position = 'fixed';
+    if(Number(headerTop.style.top) > 40){
+      headerTop.style.background = '#none';
+    }else {
+      headerTop.style.background = '#191428';
+    }
+    headerTop.style.top = `0`
     hamburger.classList.toggle('active');
     burgerMenuShown.classList.toggle('active');
-    headerTop.classList.toggle('active');
-    if(headerTop.style.background === 'transparent none repeat scroll 0% 0%'){
-    headerTop.style.background = '#191428'
-    }else{
-      headerTop.style.background = 'transparent none repeat scroll 0% 0%'
-    }
   }
 dropDownButton.forEach(n => n.addEventListener('click', () => {
     n.parentElement.parentElement.classList.toggle('active');
 }))
 
-
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  // Appearing Header on scrolling up and dissapearing when scrolling down.
-let currentScrollPos = window.pageYOffset;
-  if(prevScrollpos < headerTop.clientHeight){
-    headerTop.style.background = 'transparent';      
-    headerTop.style.top = `0px`;
-    headerTop.style.position = 'relative'
-  }else if (prevScrollpos > currentScrollPos) {
-    headerTop.style.background = '#191428';
-    headerTop.style.top = `0px`;
-    headerTop.style.position = 'fixed'
-    headerTop.style.zIndex = '9999'
-  } else {
-    headerTop.style.background = 'transparent';      
-    headerTop.style.top = `-${headerTop.clientHeight}px`;
-    headerTop.style.position = 'relative'
+if(!hamburger.classList.contains('active')){
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    // Appearing Header on scrolling up and dissapearing when scrolling down.
+  let currentScrollPos = window.pageYOffset;
+    if(prevScrollpos < headerTop.clientHeight){
+      headerTop.style.background = 'none';      
+      headerTop.style.top = `0px`;
+    }else if (prevScrollpos > currentScrollPos) {
+      headerTop.style.background = '#191428';
+      headerTop.style.top = `0px`;
+      headerTop.style.position = 'fixed'
+      headerTop.style.zIndex = '9999'
+    } else {
+      headerTop.style.background = 'none';      
+      headerTop.style.top = `-${headerTop.clientHeight}px`;
+    }
+    prevScrollpos = currentScrollPos;
+  
+    // Fading in images when bottom reaches photo's containers top.
+    fadeInIMageContainersList.forEach(n => {
+      let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
+      if(photoContainerTop < window.scrollY){
+        n.classList.add('active');
+      }
+    })
+    // Fading up text when bottom reaches text's containers top.
+    textContentFadeList.forEach(n => {
+      let textContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
+      if(textContainerTop < window.scrollY){
+        n.children[0].classList.add('active');
+      }
+    })
   }
-  prevScrollpos = currentScrollPos;
-
-  // Fading in images when bottom reaches photo's containers top.
-  fadeInIMageContainersList.forEach(n => {
-    let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
-    if(photoContainerTop < window.scrollY){
-      n.classList.add('active');
-    }
-  })
-  // Fading up text when bottom reaches text's containers top.
-  textContentFadeList.forEach(n => {
-    let textContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
-    if(textContainerTop < window.scrollY){
-      n.children[0].classList.add('active');
-    }
-  })
 }
