@@ -35,7 +35,6 @@ dropDownButton.forEach(n => n.addEventListener('click', () => {
 window.onscroll = function() {
   if(!hamburger.classList.contains('active')){
 
-    console.log('i was here')
     // Appearing Header on scrolling up and dissapearing when scrolling down.
     let currentScrollPos = window.pageYOffset;
     if(prevScrollpos < headerTop.clientHeight){
@@ -61,7 +60,7 @@ window.onscroll = function() {
     })
     // Fading up text when bottom reaches text's containers top.
     textContentFadeList.forEach(n => {
-      let textContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
+      let textContainerTop = n.getBoundingClientRect().top;
       if(textContainerTop < window.scrollY){
         n.children[0].classList.add('active');
       }
