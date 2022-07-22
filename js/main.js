@@ -53,14 +53,14 @@ let currentScrollPos = window.pageYOffset;
 
   // Fading in images when bottom reaches photo's containers top.
   fadeInIMageContainersList.forEach(n => {
-    let photoContainerTop = n.getBoundingClientRect().top;
+    let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
     if(photoContainerTop < window.scrollY){
       n.classList.add('active');
     }
   })
   // Fading up text when bottom reaches text's containers top.
   textContentFadeList.forEach(n => {
-    let textContainerTop = n.getBoundingClientRect().top + n.clientHeight/3;
+    let textContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
     if(textContainerTop < window.scrollY){
       n.children[0].classList.add('active');
     }
