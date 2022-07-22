@@ -1,3 +1,4 @@
 - [Main Page on Github Pages](https://chkhikvadzeg.github.io/BKSI)
 - [Contact Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/leistungen.html)
 - [Projects Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/projekte.html)
+- [Companies Page on Gitub Pages](https://chkhikvadzeg.github.io/BKSI/src/unternehmen.html)
