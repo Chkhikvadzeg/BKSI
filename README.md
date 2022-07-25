@@ -2,3 +2,5 @@
 - [Contact Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/leistungen.html)
 - [Projects Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/projekte.html)
 - [Companies Page on Gitub Pages](https://chkhikvadzeg.github.io/BKSI/src/unternehmen.html)
+- [Carriere Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/karriere.html)
+- [Current Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/aktuelles.html)
