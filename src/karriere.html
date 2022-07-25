@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKSI</title>
+    <link rel="shortcut icon" href="../assets/Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="../tailwindcss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="text-darkBlue">
+    <header class="h-screen items-center overflow-x-hidden">
+        <div class="absolute w-screen h-screen left-0 top-0 -z-10">
+            <img src="../assets/Bilder/houses/team-3.jpg" alt="" class="object-cover w-full h-full">
+            <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
+        </div>
+        <div class="header-top relative left-0 top-0 flex items-center justify-between w-full gap-5 p-5 md:fixed lg:px-11 lg:py-6">
+            <a href="../index.html"><img class="max-w-[140px]" src="../assets/Bilder/Arrows&Navigation/bski-logo.svg" alt="bski-logo"></a>
+            <div class=" relative flex items-center w-[80%]">
+                <nav class="hidden w-fit md:block mr-10">
+                    <ul class="flex items-center justify-between gap-5 lg:gap-[50px]">
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">leistungen</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="../src/unternehmen.html">Unternehmen</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Aktuelles</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Kontakt</a></li>
+                
+                    </ul>
+                </nav>
+                <div class="hidden search-container justify-self-end bg-white rounded-[50px] h-[50px] items-center justify-end md:flex">
+                    <input class="w-0 h-full focus:outline-none bg-transparent duration-300" type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
+                    <button onclick="searchWidth()" class="h-full aspect-square flex justify-center items-center rounded-full"><img src="../assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
+                    <button id="closeSearch" onclick="closeSearch()" class="text-2xl h-full w-0 overflow-hidden text-midGray"><i class="fa fa-times w-4" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <button onclick="burgerMenu()" class="hamburger md:hidden">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="burger-menu absolute px-7 left-0 top-full w-full min-h-[calc(100vh-82px)] bg-darkBlue md:hidden">
+                <ul class="flex flex-col p-4 mt-20 gap-10 text-[22px]">
+                    <li class="dropdown">
+                        <div class="flex items-center gap-11">
+                            <a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">leistungen</a>
+                            <button class="dropdown-button">
+                                <img src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="dropdown">
+                            </button>
+                        </div>
+                        <nav class="dropdown-content flex-col text-base gap-7 mt-10 ml-8">
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Tragwerksplaung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bautechnische Prüfung</a></li>
+                        </nav>
+                    </li>
+                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
+                    <li class="dropdown">
+                        <div class="flex items-center gap-11">
+                            <a class="text-white duration-300 ease-out hover:text-mainRed" href="../src/unternehmen.html">Unternehmen</a>
+                            <button class="dropdown-button">
+                                <img src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="dropdown">
+                            </button>
+                        </div>
+                        <nav class="dropdown-content flex-col text-base gap-7 mt-10 ml-8">
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Tragwerksplaung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
+                            <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bautechnische Prüfung</a></li>
+                        </nav>
+                    </li>
+                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
+                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Aktuelles</a></li>
+                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Kontakt</a></li>
+                    <li class="bg-white flex items-center overflow-hidden rounded-[25px] h-[50px]">
+                        <input class="px-4 w-full h-full focus:outline-none" type="search" name="search" placeholder="Suchbegriff eingeben">
+                        <button class="h-full aspect-square flex justify-center items-center rounded-full"><img src="../assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white font-semibold text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
+            <span class="text-base">Karriere</span>
+            Wir sind BKSI. Wir rechnen mit dir.
+        </h1>
+        <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="../assets/Bilder/Arrows&Navigation/arrow-header.svg" alt="arrow down">
+    </header>
+    <section class="bg-white text-fade">
+        <div class="text-content-fade flex flex-col justify-center px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px]">
+            <h2 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                <span class="text-[13px]">Miteinander unschlagbar.</span>
+                Wir sind BKSI eine führende Ingenieurgesellschaft für Beratung und Planung im Bauwesen.
+            </h2>
+            <article class="text-[15px] leading-[22px] tracking-wide mt-14 flex flex-col gap-5">
+                <p>Wir machen Tragwerksplanungen, Bauplanungen und bautechnische Prüfungen. Für mittlere und große Projekte. Für Wohnraum, Büroimmobilien und für die Industrie. Für Architekten, Bauträger, Immobilienentwickler und Großkonzerne wie Daimler und die Deutsche Bahn. Unser Büro hat seinen Sitz in Stuttgart-Zuffenhausen. Hier pflegen wir eine Unternehmenskultur, die darauf abzielt, dass wir alle Top-Leistung bringen können. Das gelingt am besten in einem gut gelaunten Team, in dem jede:r gerne morgens aufsteht und zur Arbeit fährt. Oder sich per mobilem Arbeiten einbringt.</p>
+                <p> Denn wir unterstützen einander, damit wir gemeinsam besser sind als jede:r von uns allein. Wenn du mit uns hoch hinaus willst, freuen wir uns über ein Zeichen.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="bg-mainRed relative py-[75px] px-4 md:px-10 md:py-[150px]">
+        <div class="relative">
+            <div class="text-fade text-center">
+                <div class="text-content-fade max-w-[860px] mx-auto">
+                    <h3 class="text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        <span class="text-2xl">BKSI in Zahlen</span>
+                        Unser Tagwerk: Tragwerk
+                    </h3>
+                    <div class="slider-container flex items-center flex-nowrap overflow-x-hidden scroll-smooth">
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70435</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70436</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70437</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70438</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70439</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70440</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70441</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70442</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                        <div class="mt-[90px] slider-content w-full md:mt-28 flex-shrink-0">
+                            <div class="text-[76px] leading-[100px] tracking-[3.8px] mb-[75px] text-center md:text-[155px] md:leading-[200px] md:tracking-[7.75px] md:mb-[50px]">70443</div>
+                            <p class="text-2xl mb-10 md:mb-0">… lautet unsere Postleitzahl für Stuttgart-Zuffenhausen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="slider-pages right-1/2 translate-x-1/2 -translate-y-1/2 absolute text-[15px] tracking-[.75px] md:right-0 md:top-0"><span class="current-slide">1</span> / <span class="total-slides">6</span></span>
+            <button class="slider-button-left absolute w-[50px] aspect-square bg-darkBlue rounded-full top-full left-1/2 -translate-y-1/2 -translate-x-[100px] flex justify-center items-center md:hover:w-[70px] md:left-0 md:top-1/2 md:-translate-x-1/2"><img class="rotate-180" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></button>
+            <button class="slider-button-right absolute top-full right-1/2 -translate-y-1/2 translate-x-[100px]  w-[50px] aspect-square bg-darkBlue rounded-full flex justify-center items-center md:hover:w-[70px] md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-1/2"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></button>
+        </div>
+    </section>
+
+    <section>
+        <div class="py-[75px] px-4 md:py-[155px] md:px-10 flex items-start justify-between flex-col gap-5 md:flex-row">
+            <div class="text-fade">
+                <h3 class="text-[26px] text-content-fade tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                    <span class="text-base">Gute Gründe</span>
+                    Warum BKSI? <br> Was wir dir bieten.
+                </h3>
+            </div>
+            <div class="text-[15px] leading-[22px] tracking-[0.75px] mt-[60px] md:mt-9 md:w-1/2">
+                <div class="text-fade">
+                    <p class="mb-[100px] text-content-fade">Wir arbeiten gerne im Team. Viele von uns sind schon lange dabei. Alle freuen sich auf deinen Input. Was wir dir über das vereinbarte, leistungsgerechte Gehalt hinaus bieten? Hier einige der BKSI-Highlights:</p>
+                </div>
+                <div class="flex flex-col gap-20 ">
+                    <div class="flex text-fade flex-col gap-7 ">
+                        <div class="text-content-fade">
+                            <h4 class="text-xl">Moderne Strukturen</h4>
+                            <ul class="flex flex-col gap-4 arrow">
+                                <li>Eine wertschätzende Feedback- und Führungskultur </li>
+                                <li>hoher Digitalisierungsgrad und BIM-Arbeitsmethode</li>
+                                <li>Erfolgsbeteiligung</li>
+                                <li>Flexible Arbeitszeiten</li>
+                                <li> Arbeitszeitmodelle mit Gleittagen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex text-fade flex-col gap-7">
+                        <div class="text-content-fade">
+                            <h4 class="text-xl">Gut organisierte Arbeitstage</h4>
+                            <ul class="flex flex-col gap-4 arrow">
+                                <li> Hervorragende Verkehrsanbindung </li>
+                                <li> Mobiles Arbeiten</li>
+                                <li> Freie Getränke</li>
+                                <li>Kantine</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex text-fade flex-col gap-7">
+                        <div class="text-content-fade">
+                            <h4 class="text-xl">Individuelle Förderung</h4>
+                            <ul class="flex flex-col gap-4 arrow">
+                                <li>Persönlicher Weiterbildungsplan</li>
+                                <li>Karriereförderung</li>
+                                <li>Teilzeitmodelle</li>
+                                <li>Trainee-Programm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-lightGray">
+        <div class="relative fade-in-image-container h-[30vh] md:h-screen">
+            <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+        </div>
+        <div class="flex flex-col items-start px-4 py-20 gap-16 md:px-10 md:py-40 md:flex-row md:gap-56">
+            <div class="text-fade">
+                <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-[50px] md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                    Unsere <br> Jobangebote
+                    <span class="text-[15px] tracking-[0.75px] leading-[22px]">Hier kommst du weiter</span>
+                </h3>
+            </div>
+            <div class="flex flex-col w-full  md:w-2/3">
+                <div class="flex flex-col gap-5 w-full mb-[75px] md-[100px]">
+                    <div class="text-fade">
+                        <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                            <div class="flex flex-col gap-5">
+                                <h5 class="text-xl">Bauingenieur:in in der Projektarbeit</h5>
+                                <p class="text-[15px] leading-[22px] tracking-[.75px]">als Absolvent:in oder mit Berufserfahrung mit Schwerpunkt Tragwerksplanung</p>
+                            </div>
+                            <img class="w-5 h-5" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="text-fade">
+                        <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                            <div class="flex flex-col gap-5">
+                                <h5 class="text-xl">Architekt:in</h5>
+                                <p class="text-[15px] leading-[22px] tracking-[.75px]">mit oder ohne Berufserfahrung</p>
+                            </div>
+                            <img class="w-5 h-5" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="text-fade">
+                        <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                            <div class="flex flex-col gap-5">
+                                <h5 class="text-xl">(BIM-)Konstrukteur:in</h5>
+                                <p class="text-[15px] leading-[22px] tracking-[.75px]">mit oder ohne Berufserfahrung</p>
+                            </div>
+                            <img class="w-5 h-5" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="text-fade">
+                        <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                            <div class="flex flex-col gap-5">
+                                <h5 class="text-xl">Praktikant:in oder Werkstudent:in</h5>
+                                <p class="text-[15px] leading-[22px] tracking-[.75px]">eines Bauingenieur-Studiengangs mit Schwerpunkt Konstruktion/ Tragwerksplanung</p>
+                            </div>
+                            <img class="w-5 h-5" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="text-fade">
+                        <a href="#" class="text-content-fade flex items-center justify-between bg-white min-w-full gap-5 px-5 py-8 md:px-8">
+                            <div class="flex flex-col gap-5">
+                                <h5 class="text-xl">Auszubildende:r</h5>
+                                <p class="text-[15px] leading-[22px] tracking-[.75px]">Werde jetzt Bauzeichner:in</p>
+                            </div>
+                            <img class="w-5 h-5" src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-9">
+                    <div class="text-fade">
+                        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                            Zeig uns Initiative
+                        </h3>
+                    </div>
+                    <div class="text-fade">
+                        <p class="text-content-fade text-[15px] tracking-[.75px] leading-[22px]">Du willst zu uns, doch die offenen Stellen passen nicht zu deinem Profil? Überzeuge uns trotzdem von dir – und bewirb dich initiativ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+            <div class="flex flex-col md:flex-row">
+                <div class="fade-in-image-container relative h-[50vh] w-full md:w-[50vw] md:h-screen">
+                    <img class="h-full w-full object-cover fade-in-image" src="../assets/Bilder/houses/team-3.jpg" alt="">
+                </div>
+                <div class="px-4 py-20 md:px-7 md:py-40 md:w-1/2 md:flex md:flex-col md:justify-center">
+                    <div class="text-fade mb-20">
+                        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                            <span class="text-[13px] leading-[15px] tracking-[.65px]">Dein Weg zur BKSI</span>
+                            Der Ablauf deiner Bewerbung
+                        </h3>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="text-fade">
+                            <h4 class="text-content-fade">Dein Weg zur BKSI</h4>
+                        </div>
+                        <ul class="flex flex-col gap-7 text-[15px] leading-[22px] tracking-[0.75px]">
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5>Deine Bewerbung erreicht BKSI</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5> Einladung zum Kennenlernen</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5> Das Jobinterview</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5> Die Zusage</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5> Dein erster Tag bei BKSI</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-8 dropdown-karriere-container">
+                                <div class="flex gap-9 items-center dropdown-karriere cursor-pointer">
+                                    <img class="dropdown-image" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                    <h5>Dein 100. Tag bei BKSI</h5>
+                                </div>
+                                <div class="dropdown-content-karriere">
+                                    Sende uns deine Unterlagen einfach per Upload auf das BKSi Bewerbungsportal. Alternativ kannst du uns eine E-Mail senden an karriere@BKSi.de. Wir bestätigen den Eingang.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
+            <h3 class="text-[26px] tracking-[1.3px] leading-none px-4 md:px-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                Büro Impressionen
+            </h3>
+            <div id="image-carousel" class="splide " aria-label="Beautiful Images">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
+                    type="button"
+                    aria-label="Previous slide"
+                    aria-controls="splide01-track">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                        </svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
+                    type="button"
+                    aria-label="Next slide"
+                    aria-controls="splide01-track">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                        <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="flex flex-col gap-20 md:flex-row">
+            <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-7 md:py-[150px]">
+                <div class="text-fade mb-[60px]">
+                    <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        <span class="text-[13px] leading-[15px] tracking-[.65px]">Ein erstklassiger Plan</span>
+                        Ergreife jetzt deine Chance
+                    </h3>
+                </div>
+                <div class="text-fade">
+                    <div class="text-content-fade">
+                        <h5 class="text-base mb-6">Ein erstklassiger Plan</h5>
+                        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+                            <h5>Bewirb dich direkt:</h5>
+                            <span>zu allen Jobangeboten</span>
+                        </div>
+                        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+                            <h5>Bewirb dich direkt:</h5>
+                            <a class="group" href="tel:+49 711 36 53 38-30">Telefon: <span class="group-hover:text-mainRed">+49 711 36 53 38-30</span></a>
+                            <a class="group" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
+                        </div>
+                        <article class="flex flex-col gap-5">
+                            <p>BKSI GmbH <br> Ingenieurgesellschaft für Beratung & Planung im Bauwesen</p>
+                            <p> Schwieberdinger Straße 5 70435 Stuttgart</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="relative fade-in-image-container order-1 w-full h-[30vh] md:order-2 md:w-1/2 md:h-screen">
+                <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/bksi-ingenieure-anfahrtsplan.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="px-4 pt-14 pb-20 bg-lightGray flex flex-col md:flex-row md:justify-between md:px-10 md:py-36 md:items-start">
+            <div class="text-fade">
+                <h2 class="text-content-fade flex flex-col gap-2 text-[26px] tracking-[0.3px] mb-14 md:text-[35px] md:tracking-[1.75px] md:mb-0 md:self-start">
+                    <span class="text-[13px] tracking-[0.65px] md:text-base md:tracking-[0.8px]">Aus dem Unternehmen</span>
+                    Aktuelles
+                </h2>
+            </div>
+            <div class="flex flex-col gap-8 md:gap-5 md:w-2/3">
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/houses/architechture.jpg" alt="">
+                    </div>
+                    <div class="text-fade  p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Monat 2020</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/houses/building.jpg" alt="">
+                    </div>
+                    <div class="text-fade p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Juli 2019</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                Neubau Bürogebäude Wörwag Böblingen
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/bksi-ingenieure-aktuelles-2019-07.jpg" alt="">
+                    </div>
+                    <div class="text-fade  p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Monat 2020</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/bksi-ingenieure-aktuelles-2020-08.jpg" alt="">
+                    </div>
+                    <div class="text-fade p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Juli 2019</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                Neubau Bürogebäude Wörwag Böblingen
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pl-4 pr-11 py-20 bg-darkBlue text-white md:px-11  md:pb-12">
+            <div class="md:max-w-[790px]">
+                <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:mb-[120px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
+                    <span class="text-[13px] tracking-[0.65px] md:text-base">Kontakt</span>
+                    Sie planen ein Bauprojekt oder benötigen eine Beratung? <br> Dann sollten wir uns kennenlernen.
+                </h2>
+                <article class="flex flex-col gap-5 text-xl leading-6 mb-7">
+                    <p>BKSI GmbH <br> Ingenieurgesellschaft für Beratung & Planung im Bauwesen</p>
+                    <p> Schwieberdinger Straße 5 70435 Stuttgart</p>
+                </article>
+                <div class="flex flex-col text-xl leading-6 gap-2 mb-[105px]">
+                    <a class="group" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
+                    <a class="group" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span class="group-hover:text-mainRed">0711 / 36 53 38 - 30</span></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
+                <div class="flex gap-8 mb-8 md:m-0">
+                    <a href="https://www.linkedin.com/company/bksi-gmbh/?originalSubdomain=de " class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                        <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-linkedin.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/bksigmbh" class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                        <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-facebook.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/bksi_gmbh/ " class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                        <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-instagram.svg" alt="">
+                    </a>
+                </div>
+                <div class="flex gap-[52px] mb-[74px] md:m-0">
+                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="#">Impressum</a>
+                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="#">Datenschutz</a>
+                </div>
+                <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">© 2022 BKSI GmbH</span>
+                <a class="block" href="https://www.dgnb.de/de/index.php"><img class="w-1/2 md:w-full" src="../assets/Bilder/Footer/logo-dgnb.png" alt=""></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/karriere-dropdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type   : 'slide',
+            rewind: true,
+            fixedWidth: '50%',
+            perPage: 3,
+            focus: "center",
+            gap: 40,
+            start: 1,
+            trimSpace: false,
+            breakpoints: {
+                768: {
+                    perPage: 1,
+                    gap: 0,
+                    fixedWidth: '100%',
+                },
+            },
+            arrows: 2,
+            pagination: 0,
+        }).mount();
+    </script>
+</body>
+</html>

@@ -18,6 +18,15 @@ ul.dashed > li:before {
     margin-right: 5px;
 }
 
+
+ul.arrow > li {
+    text-indent: -5px;
+}
+ul.arrow > li:before {
+    content: url(../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg);
+    margin-right: 5px;
+}
+
 .search-container{
     width: 50px;
     position: absolute;
@@ -101,6 +110,18 @@ ul.dashed > li:before {
     transform: rotate(-180deg);
 }
 
+.dropdown-content-karriere {
+    display: none;
+}
+
+.dropdown-karriere-container.active .dropdown-content-karriere {
+    display: block;
+}
+
+.dropdown-karriere-container.active .dropdown-image{
+    transform: rotate(-180deg);
+}
+
 .fade-in-image {
     position: absolute;
     transform: translateX(-100%);
@@ -118,7 +139,7 @@ ul.dashed > li:before {
 }
 
 .text-content-fade {
-    transform: translateY(1000px);
+    transform: translateY(100%);
     opacity: 0;
     transition: all 1.2s cubic-bezier(.215,.61,.355,1);
 }
