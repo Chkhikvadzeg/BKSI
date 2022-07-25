@@ -4,3 +4,4 @@
 - [Companies Page on Gitub Pages](https://chkhikvadzeg.github.io/BKSI/src/unternehmen.html)
 - [Carriere Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/karriere.html)
 - [Current Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/aktuelles.html)
+- [Contact Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/kontakt.html)
