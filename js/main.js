@@ -25,6 +25,7 @@ const burgerMenu = () => {
     headerTop.style.top = `0`
     hamburger.classList.toggle('active');
     burgerMenuShown.classList.toggle('active');
+    headerTop.style.zIndex = '9999'
   }
 dropDownButton.forEach(n => n.addEventListener('click', () => {
     n.parentElement.parentElement.classList.toggle('active');
