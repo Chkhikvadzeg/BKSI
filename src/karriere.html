@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BKSI</title>
     <link rel="shortcut icon" href="../assets/Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="../tailwindcss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
 </head>
 <body class="text-darkBlue">
     <header class="h-screen items-center overflow-x-hidden">
@@ -24,7 +24,7 @@
                         <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">leistungen</a></li>
                         <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
                         <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="../src/unternehmen.html">Unternehmen</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Karriere</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
                         <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Aktuelles</a></li>
                         <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Kontakt</a></li>
                 
@@ -76,7 +76,7 @@
                             <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bautechnische Prüfung</a></li>
                         </nav>
                     </li>
-                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Karriere</a></li>
+                    <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
                     <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Aktuelles</a></li>
                     <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Kontakt</a></li>
                     <li class="bg-white flex items-center overflow-hidden rounded-[25px] h-[50px]">
@@ -289,7 +289,7 @@
                 <div class="fade-in-image-container relative h-[50vh] w-full md:w-[50vw] md:h-screen">
                     <img class="h-full w-full object-cover fade-in-image" src="../assets/Bilder/houses/team-3.jpg" alt="">
                 </div>
-                <div class="px-4 py-20 md:px-7 md:py-40 md:w-1/2">
+                <div class="px-4 py-20 md:px-7 md:py-40 md:w-1/2 md:flex md:flex-col md:justify-center">
                     <div class="text-fade mb-20">
                         <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
                             <span class="text-[13px] leading-[15px] tracking-[.65px]">Dein Weg zur BKSI</span>
@@ -362,34 +362,183 @@
     </section>
 
     <section>
-        <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-            Büro Impressionen
-        </h3>
-        <div id="image-carousel" class="splide " aria-label="Beautiful Images">
-            <div class="splide__track relative">
-                <button class="splide__arrow splide__arrow--prev absolute left-1/2">
-                    Prev
-                </button>
-                <button class="splide__arrow splide__arrow--next">
-                    Next
-                </button>
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
-                    </li>
-                    <li class="splide__slide">
-                      <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
-                  </li>
-                </ul>
+        <div class="flex flex-col gap-10 mt-[150px] mb-[100px] md:my-[150px]">
+            <h3 class="text-[26px] tracking-[1.3px] leading-none px-4 md:px-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                Büro Impressionen
+            </h3>
+            <div id="image-carousel" class="splide " aria-label="Beautiful Images">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev absolute opacity-100 top-0 left-full -translate-x-[300%] translate-y-1/2  w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[150%] md:left-1/2"
+                    type="button"
+                    aria-label="Previous slide"
+                    aria-controls="splide01-track">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                        </svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next absolute opacity-100 top-0 left-full -translate-x-[150%] translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center hover:opacity-100 hover:scale-125 md:translate-x-[300%] md:left-1/2"
+                    type="button"
+                    aria-label="Next slide"
+                    aria-controls="splide01-track">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="9.371" height="10.824" viewBox="0 0 9.371 10.824">
+                            <path id="Pfad_29233" data-name="Pfad 29233" d="M0,0V1.633L3.993,3.938V8.561l1.414.816V3.122Z" transform="translate(4.688) rotate(30)" fill="#e63229"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                          <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                        <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="h-full w-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
+    </section>
+
+    <section>
+        <div class="flex flex-col gap-20 md:flex-row">
+            <div class="px-4 py-[75px] order-2 md:order-1 md:flex md:flex-col md:justify-center md:items-center md:w-1/2 md:px-7 md:py-[150px]">
+                <div class="text-fade mb-[60px]">
+                    <h3 class="text-content-fade text-[26px] tracking-[1.3px] leading-none flex flex-col gap-5 md:gap-7 md:text-[35px] md:leading-10 md:tracking-[1.75px]">
+                        <span class="text-[13px] leading-[15px] tracking-[.65px]">Ein erstklassiger Plan</span>
+                        Ergreife jetzt deine Chance
+                    </h3>
+                </div>
+                <div class="text-fade">
+                    <div class="text-content-fade">
+                        <h5 class="text-base mb-6">Ein erstklassiger Plan</h5>
+                        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-8">
+                            <h5>Bewirb dich direkt:</h5>
+                            <span>zu allen Jobangeboten</span>
+                        </div>
+                        <div class="flex flex-col gap-2 text-[15px] leading-[22px] tracking-[0.75px] mb-14">
+                            <h5>Bewirb dich direkt:</h5>
+                            <a class="group" href="tel:+49 711 36 53 38-30">Telefon: <span class="group-hover:text-mainRed">+49 711 36 53 38-30</span></a>
+                            <a class="group" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
+                        </div>
+                        <article class="flex flex-col gap-5">
+                            <p>BKSI GmbH <br> Ingenieurgesellschaft für Beratung & Planung im Bauwesen</p>
+                            <p> Schwieberdinger Straße 5 70435 Stuttgart</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="relative fade-in-image-container order-1 w-full h-[30vh] md:order-2 md:w-1/2 md:h-screen">
+                <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/bksi-ingenieure-anfahrtsplan.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="px-4 pt-14 pb-20 bg-lightGray flex flex-col md:flex-row md:justify-between md:px-10 md:py-36 md:items-start">
+            <div class="text-fade">
+                <h2 class="text-content-fade flex flex-col gap-2 text-[26px] tracking-[0.3px] mb-14 md:text-[35px] md:tracking-[1.75px] md:mb-0 md:self-start">
+                    <span class="text-[13px] tracking-[0.65px] md:text-base md:tracking-[0.8px]">Aus dem Unternehmen</span>
+                    Aktuelles
+                </h2>
+            </div>
+            <div class="flex flex-col gap-8 md:gap-5 md:w-2/3">
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/houses/architechture.jpg" alt="">
+                    </div>
+                    <div class="text-fade  p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Monat 2020</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/houses/building.jpg" alt="">
+                    </div>
+                    <div class="text-fade p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Juli 2019</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                Neubau Bürogebäude Wörwag Böblingen
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/bksi-ingenieure-aktuelles-2019-07.jpg" alt="">
+                    </div>
+                    <div class="text-fade  p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Monat 2020</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                mKR Teilneubau und Sanierung BA1 medius KlINIK OSTFILDERN-RUIT
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative fade-in-image-container w-full h-[50vh] md:h-full overflow-hidden">
+                        <img class="fade-in-image object-cover w-full h-full" src="../assets/Bilder/bksi-ingenieure-aktuelles-2020-08.jpg" alt="">
+                    </div>
+                    <div class="text-fade p-10 bg-white">
+                        <div class="text-content-fade flex flex-col gap-5">
+                            <h3 class="flex flex-col gap-3 text-xl">
+                                <span class="text-[13px] tracking-[0.65px]">Juli 2019</span>
+                                Neues Projekt
+                            </h3>
+                            <p class="text-[15px] leading-[22px] tracking-[0.75px]">
+                                Neubau Bürogebäude Wörwag Böblingen
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -438,22 +587,22 @@
     <script>
         new Splide('.splide', {
             type   : 'slide',
-            height: '60%',
             rewind: true,
-            perpage: 3,
-            gap: '40px',
-            position: 'move',
+            fixedWidth: '50%',
+            perPage: 3,
+            focus: "center",
+            gap: 40,
             start: 1,
-            lazyLoad: 'nearby',
-            focus: 'center',
             trimSpace: false,
-            mediaQuery: 'min',
             breakpoints: {
                 768: {
                     perPage: 1,
-                    gap: '0px',
+                    gap: 0,
+                    fixedWidth: '100%',
                 },
-            }
+            },
+            arrows: 2,
+            pagination: 0,
         }).mount();
     </script>
 </body>
