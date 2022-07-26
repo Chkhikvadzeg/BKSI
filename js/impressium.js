@@ -1,9 +1,15 @@
+const searchContainer = document.querySelector(".search-container");
 const hamburger = document.querySelector('.hamburger')
 const burgerMenuShown = document.querySelector('.burger-menu')
 const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
 
-
+const searchWidth = () => {
+    searchContainer.classList.add("active");
+}
+const closeSearch = () => {
+    searchContainer.classList.remove('active');
+}
 
 const burgerMenu = () => {
     headerTop.style.position = 'fixed';
