@@ -6,3 +6,4 @@
 - [Current Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/aktuelles.html)
 - [Contact Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/kontakt.html)
 - [Imprint Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/impressium.html)
+- [Team Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/team.html)
