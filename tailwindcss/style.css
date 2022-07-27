@@ -618,6 +618,10 @@ video {
   bottom: 1.25rem;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -751,8 +755,24 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mb-\[70px\] {
+  margin-bottom: 70px;
+}
+
 .mb-\[50px\] {
   margin-bottom: 50px;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
 }
 
 .block {
@@ -801,6 +821,14 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-\[244px\] {
+  height: 244px;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-\[25vh\] {
@@ -867,6 +895,14 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-\[134px\] {
+  width: 134px;
+}
+
+.w-\[220px\] {
+  width: 220px;
 }
 
 .w-4\/5 {
@@ -950,12 +986,21 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-rotate-12 {
+  --tw-rotate: -12deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize-none {
+  resize: none;
 }
 
 .list-inside {
@@ -1062,6 +1107,10 @@ video {
   gap: 75px;
 }
 
+.gap-36 {
+  gap: 9rem;
+}
+
 .gap-\[100px\] {
   gap: 100px;
 }
@@ -1104,6 +1153,10 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-\[38px\] {
+  border-radius: 38px;
 }
 
 .rounded-b-3xl {
@@ -1170,6 +1223,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-9 {
+  padding: 2.25rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -1205,39 +1262,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-\[150px\] {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.py-\[150x\] {
-  padding-top: 150x;
-  padding-bottom: 150x;
-}
-
-.py-\[15x\] {
-  padding-top: 15x;
-  padding-bottom: 15x;
-}
-
-.py-\[1x\] {
-  padding-top: 1x;
-  padding-bottom: 1x;
-}
-
-.py-\[x\] {
-  padding-top: x;
-  padding-bottom: x;
-}
-
-.py-\[7x\] {
-  padding-top: 7x;
-  padding-bottom: 7x;
-}
-
-.py-\[75x\] {
-  padding-top: 75x;
-  padding-bottom: 75x;
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pr-6 {
@@ -1294,6 +1321,11 @@ video {
   font-size: 35px;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -1313,6 +1345,11 @@ video {
 
 .text-\[76px\] {
   font-size: 76px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold {
@@ -1406,12 +1443,26 @@ video {
   color: rgb(226 226 226 / var(--tw-text-opacity));
 }
 
+.text-mainBlack {
+  --tw-text-opacity: 1;
+  color: rgb(25 20 40 / var(--tw-text-opacity));
+}
+
+.text-mainRed {
+  --tw-text-opacity: 1;
+  color: rgb(230 50 41 / var(--tw-text-opacity));
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .transition-none {
@@ -1588,6 +1639,14 @@ ul.arrow > li:before {
   display: block;
 }
 
+.fa-check {
+  opacity: 0;
+}
+
+#checkbox.checked  .fa-check {
+  opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
   .header-top.active {
     background-color: transparent;
@@ -1596,6 +1655,33 @@ ul.arrow > li:before {
   .burger-menu.active {
     display: none;
   }
+}
+
+.placeholder\:text-mainBlack::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(25 20 40 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-mainBlack:-ms-input-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(25 20 40 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-mainBlack::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(25 20 40 / var(--tw-text-opacity));
+}
+
+.placeholder\:opacity-100::-moz-placeholder {
+  opacity: 1;
+}
+
+.placeholder\:opacity-100:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.placeholder\:opacity-100::placeholder {
+  opacity: 1;
 }
 
 .hover\:scale-110:hover {
@@ -1631,6 +1717,12 @@ ul.arrow > li:before {
 .group:hover .group-hover\:scale-90 {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-\[85\%\] {
+  --tw-scale-x: 85%;
+  --tw-scale-y: 85%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1674,6 +1766,10 @@ ul.arrow > li:before {
 
   .md\:left-1\/2 {
     left: 50%;
+  }
+
+  .md\:right-11 {
+    right: 2.75rem;
   }
 
   .md\:order-1 {
@@ -1727,6 +1823,10 @@ ul.arrow > li:before {
     margin-top: 2.25rem;
   }
 
+  .md\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
   .md\:mb-28 {
     margin-bottom: 7rem;
   }
@@ -1735,8 +1835,8 @@ ul.arrow > li:before {
     margin-bottom: 100px;
   }
 
-  .md\:mb-36 {
-    margin-bottom: 9rem;
+  .md\:mt-12 {
+    margin-top: 3rem;
   }
 
   .md\:block {
@@ -1745,10 +1845,6 @@ ul.arrow > li:before {
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:grid {
-    display: grid;
   }
 
   .md\:hidden {
@@ -1889,12 +1985,12 @@ ul.arrow > li:before {
     gap: 14rem;
   }
 
-  .md\:gap-\[60px\] {
-    gap: 60px;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:gap-\[60px\] {
+    gap: 60px;
   }
 
   .md\:gap-\[90px\] {
@@ -1911,6 +2007,11 @@ ul.arrow > li:before {
 
   .md\:gap-\[200px\] {
     gap: 200px;
+  }
+
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .md\:self-start {
@@ -1984,11 +2085,6 @@ ul.arrow > li:before {
     padding-right: 7rem;
   }
 
-  .md\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
   .md\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -2017,13 +2113,13 @@ ul.arrow > li:before {
     font-size: 70px;
   }
 
-  .md\:text-\[35px\] {
-    font-size: 35px;
-  }
-
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-\[35px\] {
+    font-size: 35px;
   }
 
   .md\:text-\[155px\] {
@@ -2051,12 +2147,12 @@ ul.arrow > li:before {
     line-height: 200px;
   }
 
-  .md\:leading-\[70px\] {
-    line-height: 70px;
-  }
-
   .md\:leading-\[41px\] {
     line-height: 41px;
+  }
+
+  .md\:leading-\[70px\] {
+    line-height: 70px;
   }
 
   .md\:tracking-\[3px\] {
