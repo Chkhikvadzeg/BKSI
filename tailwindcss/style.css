@@ -970,6 +970,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1199,6 +1203,41 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-\[150px\] {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.py-\[150x\] {
+  padding-top: 150x;
+  padding-bottom: 150x;
+}
+
+.py-\[15x\] {
+  padding-top: 15x;
+  padding-bottom: 15x;
+}
+
+.py-\[1x\] {
+  padding-top: 1x;
+  padding-bottom: 1x;
+}
+
+.py-\[x\] {
+  padding-top: x;
+  padding-bottom: x;
+}
+
+.py-\[7x\] {
+  padding-top: 7x;
+  padding-bottom: 7x;
+}
+
+.py-\[75x\] {
+  padding-top: 75x;
+  padding-bottom: 75x;
 }
 
 .pr-6 {
@@ -1708,6 +1747,10 @@ ul.arrow > li:before {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -1796,6 +1839,10 @@ ul.arrow > li:before {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1937,6 +1984,11 @@ ul.arrow > li:before {
     padding-right: 7rem;
   }
 
+  .md\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
   .md\:pb-12 {
     padding-bottom: 3rem;
   }
@@ -2001,6 +2053,10 @@ ul.arrow > li:before {
 
   .md\:leading-\[70px\] {
     line-height: 70px;
+  }
+
+  .md\:leading-\[41px\] {
+    line-height: 41px;
   }
 
   .md\:tracking-\[3px\] {
