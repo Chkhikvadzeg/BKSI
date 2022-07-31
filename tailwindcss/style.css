@@ -622,6 +622,10 @@ video {
   right: 1rem;
 }
 
+.-top-1\/2 {
+  top: -50%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -636,6 +640,10 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .order-2 {
@@ -767,12 +775,8 @@ video {
   margin-bottom: 50px;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .block {
@@ -827,10 +831,6 @@ video {
   height: 244px;
 }
 
-.h-0 {
-  height: 0px;
-}
-
 .h-\[25vh\] {
   height: 25vh;
 }
@@ -841,6 +841,10 @@ video {
 
 .h-\[20vh\] {
   height: 20vh;
+}
+
+.h-\[267px\] {
+  height: 267px;
 }
 
 .min-h-\[calc\(100vh-82px\)\] {
@@ -907,6 +911,34 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-\[275px\] {
+  width: 275px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[4\] {
+  width: 4;
+}
+
+.w-\[43\] {
+  width: 43;
+}
+
+.w-\[430\] {
+  width: 430;
+}
+
+.w-\[430p\] {
+  width: 430p;
+}
+
+.w-\[430px\] {
+  width: 430px;
 }
 
 .min-w-full {
@@ -1127,6 +1159,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1162,6 +1198,10 @@ video {
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+}
+
+.border-\[9px\] {
+  border-width: 9px;
 }
 
 .border-t {
@@ -1209,6 +1249,16 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-5 {
@@ -1459,10 +1509,6 @@ video {
 
 .opacity-100 {
   opacity: 1;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .transition-none {
@@ -1867,6 +1913,10 @@ ul.arrow > li:before {
     height: 30vh;
   }
 
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
   .md\:w-\[60\%\] {
     width: 60%;
   }
@@ -1885,6 +1935,14 @@ ul.arrow > li:before {
 
   .md\:w-\[50vw\] {
     width: 50vw;
+  }
+
+  .md\:w-\[348px\] {
+    width: 348px;
+  }
+
+  .md\:w-1 {
+    width: 0.25rem;
   }
 
   .md\:max-w-\[790px\] {

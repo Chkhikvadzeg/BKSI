@@ -9,3 +9,4 @@
 - [Team Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/team.html)
 - [Customers Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/kunden.html)
 - [ask detail page Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/stellendetailseite.html)
+- [ask structural engineering page Page on Github Pages](https://chkhikvadzeg.github.io/BKSI/src/tragwerksplanung.html)
