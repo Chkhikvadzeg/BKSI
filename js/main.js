@@ -7,6 +7,7 @@ const dropDownButton = document.querySelectorAll('.dropdown-button');
 const fadeInIMageContainersList = document.querySelectorAll('.fade-in-image-container');
 const fadeInImagesList = document.querySelectorAll('.fade-in-image');
 const textContentFadeList = document.querySelectorAll('.text-fade');
+const hamburgerButton = document.querySelector('.hamburger');
 
 const searchWidth = () => {
     searchContainer.classList.add("active");
@@ -26,7 +27,13 @@ const burgerMenu = () => {
     hamburger.classList.toggle('active');
     burgerMenuShown.classList.toggle('active');
     headerTop.style.zIndex = '9999'
+    if(burgerMenuShown.classList.contains('active')){
+      document.body.style.overflow = 'hidden'
+    }else {
+      document.body.style.overflow = 'visible'
+    }
   }
+
 dropDownButton.forEach(n => n.addEventListener('click', () => {
     n.parentElement.parentElement.classList.toggle('active');
 }))
