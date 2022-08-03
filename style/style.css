@@ -134,10 +134,6 @@ ul.arrow > li:before {
     opacity: 1;
 }
 
-.text-fade {
-    overflow: hidden;
-}
-
 .text-content-fade {
     transform: translateY(100%);
     opacity: 0;
