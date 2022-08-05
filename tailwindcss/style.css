@@ -417,6 +417,14 @@ video {
   height: auto;
 }
 
+html {
+  font-family: 'buch', serif !important;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  font-family: 'breit', sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -851,6 +859,10 @@ video {
   max-height: 100vh;
 }
 
+.max-h-\[calc\(100vh-82px\)\] {
+  max-height: calc(100vh - 82px);
+}
+
 .min-h-\[calc\(100vh-82px\)\] {
   min-height: calc(100vh - 82px);
 }
@@ -889,6 +901,10 @@ video {
   width: 33vw;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -919,10 +935,6 @@ video {
 
 .w-\[220px\] {
   width: 220px;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .min-w-\[250px\] {
@@ -1535,6 +1547,18 @@ video {
           hyphens: manual;
 }
 
+@font-face {
+  font-family: 'buch';
+
+  src:  url('../assets/Webfont/soehne-breit-buch.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'halbfett';
+
+  src:  url('../assets/Webfont/soehne-breit-halbfett.woff2') format('woff2'),
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1901,10 +1925,6 @@ ul.arrow > li:before {
 
   .md\:hidden {
     display: none;
-  }
-
-  .md\:h-\[50vh\] {
-    height: 50vh;
   }
 
   .md\:h-full {

@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'buch';
+    src:  url('../assets/Webfont/soehne-breit-buch.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'halbfett';
+    src:  url('../assets/Webfont/soehne-breit-halbfett.woff2') format('woff2'),
+}
+
+@layer base {
+    html {
+        font-family: 'buch', serif !important;
+    }
+
+    h1,h2,h3,h4,h5,h6,a{
+        font-family: 'breit', sans-serif;
+    }
+}
+
+
+
 html {
     scroll-behavior: smooth;
 }
