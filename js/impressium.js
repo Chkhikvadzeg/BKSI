@@ -13,7 +13,7 @@ const closeSearch = () => {
 
 const burgerMenu = () => {
     headerTop.style.position = 'fixed';
-    if(Number(headerTop.style.top) > 40){
+    if(parseFloat(headerTop.style.top) > 40){
       headerTop.style.background = '#none';
     }else {
       headerTop.style.background = '#191428';

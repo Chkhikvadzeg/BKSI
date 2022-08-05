@@ -4,9 +4,6 @@ const hamburger = document.querySelector('.hamburger')
 const burgerMenuShown = document.querySelector('.burger-menu')
 const headerTop = document.querySelector('.header-top')
 const dropDownButton = document.querySelectorAll('.dropdown-button');
-const fadeInIMageContainersList = document.querySelectorAll('.fade-in-image-container');
-const fadeInImagesList = document.querySelectorAll('.fade-in-image');
-const textContentFadeList = document.querySelectorAll('.text-fade');
 const hamburgerButton = document.querySelector('.hamburger');
 
 const searchWidth = () => {
@@ -18,7 +15,7 @@ const closeSearch = () => {
 
 const burgerMenu = () => {
     headerTop.style.position = 'fixed';
-    if(Number(headerTop.style.top) > 40){
+    if(parseInt(headerTop.style.top) > 40){
       headerTop.style.background = '#none';
     }else {
       headerTop.style.background = '#191428';
@@ -59,20 +56,21 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 
-    // Fading in images when bottom reaches photo's containers top.
-    fadeInIMageContainersList.forEach(n => {
-      let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
-      if(photoContainerTop < window.scrollY){
-        n.classList.add('active');
-      }
-    })
-    // Fading up text when bottom reaches text's containers top.
-    textContentFadeList.forEach(n => {
-      let textContainerTop = n.getBoundingClientRect().top;
-      if(textContainerTop < window.scrollY){
-        n.children[0].classList.add('active');
-      }
-    })
+    // // Fading in images when bottom reaches photo's containers top.
+    // fadeInIMageContainersList.forEach(n => {
+    //   let photoContainerTop = n.getBoundingClientRect().top + n.clientHeight / 3;
+    //   if(photoContainerTop < window.scrollY){
+    //     n.classList.add('active');
+    //   }
+    // })
+    // // Fading up text when bottom reaches text's containers top.
+    // textContentFadeList.forEach(n => {
+    //   let textContainerTop = n.getBoundingClientRect().top;
+    //   if(textContainerTop < window.scrollY){
+    //     n.children[0].classList.add('active');
+    //   }
+    // })
   }
 }
+
 

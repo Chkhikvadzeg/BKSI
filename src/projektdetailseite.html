@@ -41,7 +41,7 @@
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
-            <nav class="burger-menu absolute px-7 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:hidden">
+            <nav class="burger-menu absolute px-7 pb-16 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:hidden">
                 <ul class="flex flex-col p-4 mt-20 gap-10 text-[22px]">
                     <li class="dropdown">
                         <div class="flex items-center gap-11">
@@ -95,41 +95,51 @@
     <section>
         <div class="grid grid-cols-1 items-start text-[15px] leading-[22px] tracking-[0.75px] md:grid-cols-2">
             <div class="pl-4 pr-10 py-20 bg-lightGray flex flex-col md:px-40 md:pt-[200px] md:pb-60">
-                <h3 class="text-[26px] tracking-[0.3px] mb-[50px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
-                    Projekt Eckdaten
-                </h3>
-                <div class="flex flex-col gap-3">
-                    <span>Bautyp / Gebäudeart </span>
-                    <div class="flex flex-col">
-                        <h5>Leistungsbild:</h5>
-                        <span>Leistung X, Leistung Y </span>
+                <div class="text-fade">
+                    <h3 class="text-content-fade text-[26px] tracking-[0.3px] mb-[50px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
+                        Projekt Eckdaten
+                    </h3>
+                </div>
+                <div class="text-fade">
+                    <div class="text-content-fade flex flex-col gap-3">
+                        <span>Bautyp / Gebäudeart </span>
+                        <div class="flex flex-col">
+                            <h5>Leistungsbild:</h5>
+                            <span>Leistung X, Leistung Y </span>
+                        </div>
+                        <div class="flex flex-col">
+                            <h5> Bauherr:</h5>
+                            <span>Bauherrname</span>
+                        </div>
+                        <span> 20XX–20XX</span>
+                        <span>BGF</span>
                     </div>
-                    <div class="flex flex-col">
-                        <h5> Bauherr:</h5>
-                        <span>Bauherrname</span>
-                    </div>
-                    <span> 20XX–20XX</span>
-                    <span>BGF</span>
                 </div>
             </div>
             <div class="pt-20 pb-56 md:pt-[200px] md:pb-[300px]">
-                <article class="flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
-                    <div class="flex flex-col gap-5">
-                        <h4 class="text-xl">Projektbeschreibung</h4>
-                        <p>Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
-                    </div>
-                    <div class="flex flex-col gap-5">
-                        <h4 class="text-xl">Herausforderungen des Projekts</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
-                    </div>
-                </article>
-                <img class="w-full object-cover mt-28 mb-24" src="../assets/Bilder/houses/house-1.jpg" alt="">
-                <article class="flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
-                    <div class="flex flex-col gap-5">
-                        <h4 class="text-xl">Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen</h4>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
-                    </div>
-                </article>
+                <div class="text-fade">
+                    <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
+                        <div class="flex flex-col gap-5">
+                            <h4 class="text-xl">Projektbeschreibung</h4>
+                            <p>Ausgangssituation, tiefere Leistungsbeschreibung (Welche Leistungen hat BKSi erbracht), Kooperationspartner (Architekten o.Ä.) Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <h4 class="text-xl">Herausforderungen des Projekts</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="fade-in-image-container mt-28 mb-24 h-[50vh] w-auto">
+                    <img class="w-full h-full object-cover fade-in-image" src="../assets/Bilder/houses/house-1.jpg" alt="">
+                </div>
+                <div class="text-fade">
+                    <article class="text-content-fade flex flex-col gap-32 px-4 md:pl-[100px] md:pr-28">
+                        <div class="flex flex-col gap-5">
+                            <h4 class="text-xl">Ggf. Nachhaltigkeitsthemen oder Untersuchung von Alternativen Lösungen</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
@@ -295,6 +305,7 @@
 
         </div>
     </footer>
+    <script src="../js/lazy-loading.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.3.3/dist/js/splide.min.js"></script>
     <script>

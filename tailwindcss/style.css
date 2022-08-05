@@ -570,6 +570,10 @@ h1,h2,h3,h4,h5,h6,a{
   visibility: visible;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -855,12 +859,12 @@ h1,h2,h3,h4,h5,h6,a{
   height: 20vh;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
 .max-h-\[calc\(100vh-82px\)\] {
   max-height: calc(100vh - 82px);
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .min-h-\[calc\(100vh-82px\)\] {
@@ -895,10 +899,6 @@ h1,h2,h3,h4,h5,h6,a{
 
 .w-2\/3 {
   width: 66.666667%;
-}
-
-.w-\[33vw\] {
-  width: 33vw;
 }
 
 .w-4\/5 {
@@ -1167,6 +1167,10 @@ h1,h2,h3,h4,h5,h6,a{
   overflow: hidden;
 }
 
+.overflow-visible {
+  overflow: visible;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1305,6 +1309,10 @@ h1,h2,h3,h4,h5,h6,a{
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pr-6 {
@@ -1680,11 +1688,15 @@ ul.arrow > li:before {
   transform: rotate(-180deg);
 }
 
+.fade-in-image-container{
+  position: relative;
+}
+
 .fade-in-image {
   position: absolute;
   transform: translateX(-100%);
   opacity: 0;
-  transition: all 1.2s cubic-bezier(.645,.045,.355,1);
+  transition: all 1s cubic-bezier(.645,.045,.355,1);
 }
 
 .fade-in-image-container.active .fade-in-image {
@@ -1692,13 +1704,17 @@ ul.arrow > li:before {
   opacity: 1;
 }
 
+.text-fade {
+  overflow: hidden;
+}
+
 .text-content-fade {
   transform: translateY(100%);
   opacity: 0;
-  transition: all 1.2s cubic-bezier(.215,.61,.355,1);
+  transition: all 1.5s cubic-bezier(.215,.61,.355,1);
 }
 
-.text-content-fade.active {
+.text-fade.active .text-content-fade{
   transform: translateY(0);
   opacity: 1;
 }
