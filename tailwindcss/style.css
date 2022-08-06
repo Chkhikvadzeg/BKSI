@@ -2263,6 +2263,14 @@ ul.arrow > li:before {
     padding: 2.5rem;
   }
 
+  .md\:p-32 {
+    padding: 8rem;
+  }
+
+  .md\:p-\[100px\] {
+    padding: 100px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2316,6 +2324,41 @@ ul.arrow > li:before {
   .md\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .md\:px-\[1\] {
+    padding-left: 1;
+    padding-right: 1;
+  }
+
+  .md\:px-\[10\] {
+    padding-left: 10;
+    padding-right: 10;
+  }
+
+  .md\:px-\[100\] {
+    padding-left: 100;
+    padding-right: 100;
+  }
+
+  .md\:px-\[100p\] {
+    padding-left: 100p;
+    padding-right: 100p;
+  }
+
+  .md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .md\:pb-12 {
@@ -2408,6 +2451,18 @@ ul.arrow > li:before {
 
   .md\:pt-\[125px\] {
     padding-top: 125px;
+  }
+
+  .md\:pl-32 {
+    padding-left: 8rem;
+  }
+
+  .md\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
   }
 
   .md\:text-\[70px\] {
