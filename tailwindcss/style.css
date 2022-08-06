@@ -799,6 +799,10 @@ h1,h2,h3,h4,h5,h6,a{
   margin-bottom: 70px;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .block {
   display: block;
 }
