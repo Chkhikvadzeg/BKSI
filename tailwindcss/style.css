@@ -418,11 +418,11 @@ video {
 }
 
 html {
-  font-family: 'buch', serif !important;
+  font-family: 'buch', serif;
 }
 
 h1,h2,h3,h4,h5,h6,a{
-  font-family: 'halbfett', sans-serif;
+  /* font-family: 'halbfett', sans-serif; */
 }
 
 *, ::before, ::after {
@@ -865,6 +865,34 @@ h1,h2,h3,h4,h5,h6,a{
 
 .h-\[20vh\] {
   height: 20vh;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[4\] {
+  height: 4;
+}
+
+.h-\[40\] {
+  height: 40;
+}
+
+.h-\[400\] {
+  height: 400;
+}
+
+.h-\[400p\] {
+  height: 400p;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .max-h-\[calc\(100vh-82px\)\] {
@@ -1361,6 +1389,10 @@ h1,h2,h3,h4,h5,h6,a{
   text-align: center;
 }
 
+.font-\[\'halbfett\'\] {
+  font-family: 'halbfett';
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1560,17 +1592,21 @@ h1,h2,h3,h4,h5,h6,a{
 @font-face {
   font-family: 'buch';
 
-  src:  url('../assets/Webfont/soehne-breit-buch.woff2') format('woff2'),
+  src:  url('../assets/Webfont/soehne-breit-buch.woff2') format('woff2')
 }
 
 @font-face {
   font-family: 'halbfett';
 
-  src:  url('../assets/Webfont/soehne-breit-halbfett.woff2') format('woff2'),
+  src:  url('../assets/Webfont/soehne-breit-halbfett.woff2') format('woff2')
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 * {
@@ -1970,6 +2006,10 @@ ul.arrow > li:before {
 
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
   }
 
   .md\:w-\[60\%\] {
