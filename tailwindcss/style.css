@@ -418,11 +418,17 @@ video {
 }
 
 html {
-  font-family: 'buch', serif;
+  font-family: 'buch';
 }
 
 h1,h2,h3,h4,h5,h6,a{
-  /* font-family: 'halbfett', sans-serif; */
+  font-family: 'halbfett';
+}
+
+a[href^="tel:"],
+    a[href^="mailto:"] {
+  font-family: 'buch';
+  white-space: nowrap;
 }
 
 *, ::before, ::after {
@@ -767,10 +773,6 @@ h1,h2,h3,h4,h5,h6,a{
   margin-top: 150px;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-\[50px\] {
   margin-bottom: 50px;
 }
@@ -851,6 +853,10 @@ h1,h2,h3,h4,h5,h6,a{
   height: 1.25rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .h-\[244px\] {
   height: 244px;
 }
@@ -865,34 +871,6 @@ h1,h2,h3,h4,h5,h6,a{
 
 .h-\[20vh\] {
   height: 20vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[4\] {
-  height: 4;
-}
-
-.h-\[40\] {
-  height: 40;
-}
-
-.h-\[400\] {
-  height: 400;
-}
-
-.h-\[400p\] {
-  height: 400p;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .max-h-\[calc\(100vh-82px\)\] {
@@ -1393,6 +1371,42 @@ h1,h2,h3,h4,h5,h6,a{
   font-family: 'halbfett';
 }
 
+.font-\[\"\"\] {
+  font-family: "";
+}
+
+.font-\[\"b\"\] {
+  font-family: "b";
+}
+
+.font-\[\"bu\"\] {
+  font-family: "bu";
+}
+
+.font-\[\"buc\"\] {
+  font-family: "buc";
+}
+
+.font-\[\"buch\"\] {
+  font-family: "buch";
+}
+
+.font-\[\'buch\'\] {
+  font-family: 'buch';
+}
+
+.font-\[\'\'\] {
+  font-family: '';
+}
+
+.font-\[\'b\'\] {
+  font-family: 'b';
+}
+
+.font-\[\'buc\'\] {
+  font-family: 'buc';
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1444,6 +1458,10 @@ h1,h2,h3,h4,h5,h6,a{
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -2004,12 +2022,12 @@ ul.arrow > li:before {
     height: 100vh;
   }
 
-  .md\:h-auto {
-    height: auto;
-  }
-
   .md\:h-\[400px\] {
     height: 400px;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-\[60\%\] {

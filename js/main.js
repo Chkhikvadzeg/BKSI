@@ -27,7 +27,8 @@ const burgerMenu = () => {
     if(burgerMenuShown.classList.contains('active')){
       document.body.style.overflow = 'hidden'
     }else {
-      document.body.style.overflow = 'visible'
+      document.body.style.overflow = 'auto'
+      document.body.style.overflowX = 'hidden'
     }
   }
 

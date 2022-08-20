@@ -14,12 +14,19 @@
 
 @layer base {
     html {
-        font-family: 'buch', serif;
+        font-family: 'buch';
     }
 
     h1,h2,h3,h4,h5,h6,a{
-        /* font-family: 'halbfett', sans-serif; */
+        font-family: 'halbfett';
     }
+
+    a[href^="tel:"],
+    a[href^="mailto:"] {
+        font-family: 'buch';
+        white-space: nowrap;
+    }
+
 }
 
 
