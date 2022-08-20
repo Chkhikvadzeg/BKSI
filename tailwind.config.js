@@ -22,9 +22,24 @@ module.exports = {
         'mainOrange': '#ED4900',
         'darkBlue': '#191428',
       },
+      keyframes: {
+        displayTransition: {
+          '0%': { opacity: '0', display: 'none' },
+          '1%': { opacity: '0', display: 'flex' },
+          '100%': { opacity: '1', display: 'flex' },
+        },
+      },
+      animation: {
+        'navDropown': 'displayTransition .3s ease-out',
+      },
+  },
+  variants:{
+    extend: {
+      animation: ['group-hover'],
     },
   },
   plugins: [
     require("tailwindcss-hyphens")
   ],
+}
 }

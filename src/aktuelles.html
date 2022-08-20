@@ -15,17 +15,39 @@
             <img src="../assets/Bilder/houses/architechture-1.jpg" alt="" class="object-cover w-full h-full">
             <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
         </div>
-        <div class="header-top relative left-0 top-0 flex items-center justify-between w-full gap-5 p-5 md:fixed lg:px-11 lg:py-6">
+                <div class="header-top relative left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
             <a href="../index.html"><img class="max-w-[140px]" src="../assets/Bilder/Arrows&Navigation/bski-logo.svg" alt="bski-logo"></a>
-            <div class=" relative flex items-center w-[80%]">
-                <nav class="hidden w-fit md:block mr-10">
-                    <ul class="flex items-center justify-between gap-5 lg:gap-[50px]">
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">Leistungen</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="../src/unternehmen.html">Unternehmen</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./aktuelles.html">Aktuelles</a></li>
-                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kontakt.html">Kontakt</a></li>
+            <div class=" relative flex items-center w-[80%] h-full">
+                <nav class="hidden w-fit md:block mr-10 h-full">
+                    <ul class="flex items-center justify-between gap-5 h-full lg:gap-12">
+                        <li class="relative group nav-dropdown h-full flex items-center justify-center">
+                            <div class="flex items-center gap-7">
+                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">Leistungen</a>
+                                <img class="absolute -right-8 opacity-0 group-hover:opacity-100 " src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                            </div>
+                            <nav class="absolute top-full -left-8 w-[280px] bg-darkBlue text-white px-7 py-9 flex-col text-base gap-7 z-50 border-t border-mainRed hidden opacity-0 animate">
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./tragwerksplanung.html">Tragwerksplaung</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./bautechnische-prufung.html">Bautechnische Prüfung</a></li>
+                            </nav>
+                        </li>
+                        <li class="h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
+                        <li class="relative group nav-dropdown h-full flex items-center justify-center">
+                            <div class="flex items-center gap-7">
+                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="./unternehmen.html">Unternehmen</a>
+                                <img class="absolute -right-8 opacity-0 group-hover:opacity-100 " src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                            </div>
+                            <nav class="absolute top-full -left-8 w-[280px] bg-darkBlue text-white px-7 py-9 flex-col text-base gap-7 z-50 border-t border-mainRed hidden opacity-0 animate">
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./team.html">Team</a></li>
+                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kunden.html">Kunden</a></li>
+                            </nav>
+                        </li>
+                        <li class="h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
+                        <li class="h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./aktuelles.html">Aktuelles</a></li>
+                        <li class="h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kontakt.html">Kontakt</a></li>
                 
                     </ul>
                 </nav>
@@ -85,7 +107,7 @@
                 </ul>
             </nav>
         </div>
-        <h1 class="w-2/3 absolute top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
+        <h1 class="w-2/3 absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px]">
             <span class="text-xs md:text-base">Aktuelles</span>
             Überschrift Lorem ipsum dolor sit amet, consetetur sadipscing elitr
         </h1>
@@ -168,7 +190,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="pl-4 pr-11 py-20 bg-darkBlue text-white md:px-11  md:pb-12">
             <div class="md:max-w-[790px]">
@@ -176,13 +197,16 @@
                     <span class="text-[13px] tracking-[0.65px] md:text-base">Kontakt</span>
                     Sie planen ein Bauprojekt oder benötigen eine Beratung? <br> Dann sollten wir uns kennenlernen.
                 </h2>
-                <article class="flex flex-col gap-5 text-xl leading-6 mb-7">
+                <article class="flex flex-col text-xl leading-6 mb-7">
                     <p>BKSI GmbH <br> Ingenieurgesellschaft für Beratung & Planung im Bauwesen</p>
-                    <p> Schwieberdinger Straße 5 70435 Stuttgart</p>
                 </article>
-                <div class="flex flex-col text-xl leading-6 gap-2 mb-[105px]">
-                    <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
-                    <a class="group font-normal" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span class="group-hover:text-mainRed">0711 / 36 53 38 - 30</span></a>
+                
+                <div class="flex  flex-col mb-[105px] gap-8 md:gap-28 md:mb-52 md:flex-row md:items-center">
+                    <p> Schwieberdinger Straße 5 <br> 70435 Stuttgart</p>
+                    <div class="flex flex-col text-xl leading-6 gap-2">
+                        <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
+                        <a class="group font-normal" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span class="group-hover:text-mainRed">0711 / 36 53 38 - 30</span></a>
+                    </div>
                 </div>
             </div>
 
@@ -199,12 +223,13 @@
                     </a>
                 </div>
                 <div class="flex gap-[52px] mb-[74px] md:m-0">
-                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="./impressium.html">Impressum</a>
+                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="../src/impressium.html">Impressum</a>
                     <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="#">Datenschutz</a>
                 </div>
                 <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">© 2022 BKSI GmbH</span>
                 <a class="block" href="https://www.dgnb.de/de/index.php"><img class="w-1/2 md:w-full" src="../assets/Bilder/Footer/logo-dgnb.png" alt=""></a>
             </div>
+
         </div>
     </footer>
     <script src="../js/main.js"></script>

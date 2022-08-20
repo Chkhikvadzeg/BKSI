@@ -202,6 +202,17 @@ ul.arrow > li:before {
     opacity: 1;
 }
 
+@keyframes displayTransition {
+    0% { opacity: 0; display: none }
+    1% { opacity: 0; display: flex }
+    100% { opacity: 1; display: flex }
+}
+
+.nav-dropdown:hover .animate {
+    display: flex;
+    animation: displayTransition .6s ease-in-out forwards;
+}
+
 @media screen and (min-width: 768px) {
     .header-top.active {
         background-color: transparent;
