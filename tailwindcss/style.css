@@ -620,14 +620,6 @@ a[href^="tel:"],
   bottom: 0px;
 }
 
-.-right-8 {
-  right: -2rem;
-}
-
-.-left-8 {
-  left: -2rem;
-}
-
 .right-4 {
   right: 1rem;
 }
@@ -743,14 +735,6 @@ a[href^="tel:"],
 
 .mb-\[74px\] {
   margin-bottom: 74px;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mb-9 {
@@ -877,6 +861,10 @@ a[href^="tel:"],
   height: 244px;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-\[25vh\] {
   height: 25vh;
 }
@@ -891,10 +879,6 @@ a[href^="tel:"],
 
 .max-h-\[calc\(100vh-82px\)\] {
   max-height: calc(100vh - 82px);
-}
-
-.max-h-screen {
-  max-height: 100vh;
 }
 
 .min-h-\[calc\(100vh-82px\)\] {
@@ -933,20 +917,6 @@ a[href^="tel:"],
   width: 50%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-\[280px\] {
-  width: 280px;
-}
-
 .w-\[430px\] {
   width: 430px;
 }
@@ -973,6 +943,12 @@ a[href^="tel:"],
 
 .w-\[220px\] {
   width: 220px;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .min-w-\[250px\] {
@@ -1059,6 +1035,13 @@ a[href^="tel:"],
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .resize-none {
   resize: none;
 }
@@ -1093,10 +1076,6 @@ a[href^="tel:"],
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1215,10 +1194,6 @@ a[href^="tel:"],
   border-radius: 40px;
 }
 
-.rounded-\[25px\] {
-  border-radius: 25px;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1325,11 +1300,6 @@ a[href^="tel:"],
   padding-bottom: 5rem;
 }
 
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1392,6 +1362,10 @@ a[href^="tel:"],
 
 .pb-56 {
   padding-bottom: 14rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
 }
 
 .pr-4 {
@@ -1575,11 +1549,6 @@ a[href^="tel:"],
   color: rgb(25 20 40 / var(--tw-text-opacity));
 }
 
-.text-mainRed {
-  --tw-text-opacity: 1;
-  color: rgb(230 50 41 / var(--tw-text-opacity));
-}
-
 .opacity-10 {
   opacity: 0.1;
 }
@@ -1588,12 +1557,12 @@ a[href^="tel:"],
   opacity: 0.5;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .transition-none {
@@ -1879,6 +1848,70 @@ ul.arrow > li:before {
   opacity: 1;
 }
 
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:left-4::after {
+  content: var(--tw-content);
+  left: 1rem;
+}
+
+.after\:top-3::after {
+  content: var(--tw-content);
+  top: 0.75rem;
+}
+
+.after\:h-\[13px\]::after {
+  content: var(--tw-content);
+  height: 13px;
+}
+
+.after\:w-\[10px\]::after {
+  content: var(--tw-content);
+  width: 10px;
+}
+
+.after\:rotate-45::after {
+  content: var(--tw-content);
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.after\:border-b-\[3px\]::after {
+  content: var(--tw-content);
+  border-bottom-width: 3px;
+}
+
+.after\:border-r-\[3px\]::after {
+  content: var(--tw-content);
+  border-right-width: 3px;
+}
+
+.after\:border-mainRed::after {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(230 50 41 / var(--tw-border-opacity));
+}
+
+.after\:opacity-0::after {
+  content: var(--tw-content);
+  opacity: 0;
+}
+
+.after\:transition-opacity::after {
+  content: var(--tw-content);
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.after\:duration-300::after {
+  content: var(--tw-content);
+  transition-duration: 300ms;
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1941,7 +1974,8 @@ ul.arrow > li:before {
   color: rgb(230 50 41 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:opacity-100 {
+.peer:checked ~ .peer-checked\:after\:opacity-100::after {
+  content: var(--tw-content);
   opacity: 1;
 }
 
@@ -2579,10 +2613,6 @@ ul.arrow > li:before {
 
   .lg\:gap-12 {
     gap: 3rem;
-  }
-
-  .lg\:gap-\[50px\] {
-    gap: 50px;
   }
 
   .lg\:px-11 {
