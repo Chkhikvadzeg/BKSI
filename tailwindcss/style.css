@@ -785,6 +785,10 @@ a[href^="tel:"],
   margin-bottom: 1.25rem;
 }
 
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -1202,9 +1206,21 @@ a[href^="tel:"],
   border-radius: 38px;
 }
 
+.rounded-\[25px\] {
+  border-radius: 25px;
+}
+
 .rounded-b-3xl {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-t {
@@ -1219,6 +1235,11 @@ a[href^="tel:"],
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-mainBlack {
+  --tw-border-opacity: 1;
+  border-color: rgb(25 20 40 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1248,6 +1269,11 @@ a[href^="tel:"],
 .bg-lightGray {
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 244 / var(--tw-bg-opacity));
+}
+
+.bg-mainBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 20 40 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -1308,6 +1334,11 @@ a[href^="tel:"],
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-3 {
@@ -2115,6 +2146,14 @@ ul.arrow > li:before {
     margin-top: 3rem;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2264,6 +2303,10 @@ ul.arrow > li:before {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .md\:flex-col {

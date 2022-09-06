@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,52 +10,84 @@
     <link rel="stylesheet" href="../tailwindcss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="text-darkBluez">
     <header class="h-screen items-center overflow-x-hidden">
         <div class="absolute w-screen h-screen left-0 top-0 -z-10">
             <img src="../assets/Bilder/bksi-ingenieure-teaser-projekte.jpg" alt="" class="object-cover w-full h-full">
             <div class="absolute bg-black w-full h-full z-10 top-0 left-0 bg-opacity-70"></div>
         </div>
-        <div class="header-top relative left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
-            <a href="../index.html"><img class="max-w-[140px]" src="../assets/Bilder/Arrows&Navigation/bski-logo.svg" alt="bski-logo"></a>
-            <div class="burger-menu absolute px-7 pb-16 pt-20 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:top-0 md:p-0 md:min-h-fit md:overflow-visible md:bg-transparent md:relative flex items-center md:w-[80%] h-full">
+        <div
+            class="header-top relative left-0 top-0 flex items-center justify-between w-full h-[90px] gap-5 p-5 md:fixed lg:px-11 lg:py-6">
+            <a href="../index.html"><img class="max-w-[140px]" src="../assets/Bilder/Arrows&Navigation/bski-logo.svg"
+                    alt="bski-logo"></a>
+            <div
+                class="burger-menu absolute px-7 pb-16 pt-20 left-0 top-full w-full min-h-[calc(100vh-82px)] max-h-[calc(100vh-82px)] overflow-auto bg-darkBlue md:top-0 md:p-0 md:min-h-fit md:overflow-visible md:bg-transparent md:relative flex items-center md:w-[80%] h-full">
                 <nav class=" md:block md:mr-10 md:h-full md:w-fit">
-                    <ul class="flex flex-col items-start p-4 gap-10 text-[22px] h-full md:items-center md:justify-between md:text-base md:gap-5 md:p-0 md:flex-row lg:gap-12">
-                        <li class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center">
+                    <ul
+                        class="flex flex-col items-start p-4 gap-10 text-[22px] h-full md:items-center md:justify-between md:text-base md:gap-5 md:p-0 md:flex-row lg:gap-12">
+                        <li
+                            class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center">
                             <div class="flex items-center gap-11">
-                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="./leistungen.html">Leistungen</a>
-                                <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100 " src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                                <a class="text-white duration-300 ease-out hover:text-mainRed"
+                                    href="./leistungen.html">Leistungen</a>
+                                <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100 "
+                                    src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
                             </div>
-                            <nav class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate">
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./tragwerksplanung.html">Tragwerksplaung</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung / BIM</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./bautechnische-prufung.html">Bautechnische Prüfung</a></li>
-                            </nav>
+                            <nav
+                                class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate">
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed"
+                                href="./tragwerksplanung.html">Tragwerksplaung</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Generalplanung</a>
                         </li>
-                        <li class="md:h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a></li>
-                        <li class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center">
-                            <div class="flex items-center gap-11">
-                                <a class="text-white duration-300 ease-out hover:text-mainRed" href="./unternehmen.html">Unternehmen</a>
-                                <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100 " src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
-                            </div>
-                            <nav class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate">
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./team.html">Team</a></li>
-                                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kunden.html">Kunden</a></li>
-                            </nav>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Digitale Planung /
+                                BIM</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Bauwerksprüfung</a>
                         </li>
-                        <li class="md:h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a></li>
-                        <li class="md:h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./aktuelles.html">Aktuelles</a></li>
-                        <li class="md:h-full flex justify-center items-center"><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kontakt.html">Kontakt</a></li>
-                
-                    </ul>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="#">Gutachten</a></li>
+                        <li><a class="text-white duration-300 ease-out hover:text-mainRed"
+                                href="./bautechnische-prufung.html">Bautechnische Prüfung</a></li>
                 </nav>
-                <div class="w-full mt-5 md:absolute md:right-0  search-container justify-self-end bg-white rounded-[50px] h-[50px] flex items-center md:mt-0 md:justify-end md:w-[50px]">
-                    <input class="w-full h-full focus:outline-none bg-transparent duration-300 px-3 md:w-0" type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
-                    <button onclick="searchWidth()" class="h-full aspect-square flex justify-center items-center rounded-full"><img src="../assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
-                    <button id="closeSearch" onclick="closeSearch()" class="hidden text-2xl h-full w-0 overflow-hidden text-midGray md:block"><i class="fa fa-times w-4" aria-hidden="true"></i></button>
+                </li>
+                <li class="md:h-full flex justify-center items-center"><a
+                        class="text-white duration-300 ease-out hover:text-mainRed" href="./projekte.html">Projekte</a>
+                </li>
+                <li
+                    class="relative group nav-dropdown md:h-full flex flex-col items-start justify-center md:flex-row md:items-center">
+                    <div class="flex items-center gap-11">
+                        <a class="text-white duration-300 ease-out hover:text-mainRed"
+                            href="./unternehmen.html">Unternehmen</a>
+                        <img class="dropdown-button cursor-pointer md:cursor-default md:absolute md:-right-8 md:opacity-0 md:group-hover:opacity-100 "
+                            src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt="">
+                    </div>
+                    <nav
+                        class="mt-10 ml-8 hidden md:m-0 md:absolute md:top-full md:-left-8 md:w-[280px] md:bg-darkBlue text-white md:px-7 md:py-9 flex-col text-base gap-7 z-50 md:border-t border-mainRed md:hidden md:opacity-0 animate">
+                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./team.html">Team</a></li>
+                <li><a class="text-white duration-300 ease-out hover:text-mainRed" href="./kunden.html">Kunden</a></li>
+                </nav>
+                </li>
+                <li class="md:h-full flex justify-center items-center"><a
+                        class="text-white duration-300 ease-out hover:text-mainRed" href="./karriere.html">Karriere</a>
+                </li>
+                <li class="md:h-full flex justify-center items-center"><a
+                        class="text-white duration-300 ease-out hover:text-mainRed"
+                        href="./aktuelles.html">Aktuelles</a></li>
+                <li class="md:h-full flex justify-center items-center"><a
+                        class="text-white duration-300 ease-out hover:text-mainRed" href="./kontakt.html">Kontakt</a>
+                </li>
+
+                </ul>
+                </nav>
+                <div
+                    class="w-full mt-5 md:absolute md:right-0  search-container justify-self-end bg-white rounded-[50px] h-[50px] flex items-center md:mt-0 md:justify-end md:w-[50px]">
+                    <input class="w-full h-full focus:outline-none bg-transparent duration-300 px-3 md:w-0"
+                        type="search" name="search" id="search" placeholder="Suchbegriff eingeben">
+                    <button onclick="searchWidth()"
+                        class="h-full aspect-square flex justify-center items-center rounded-full"><img
+                            src="../assets/Bilder/Arrows&Navigation/search-icon.svg" alt="search icon"></button>
+                    <button id="closeSearch" onclick="closeSearch()"
+                        class="hidden text-2xl h-full w-0 overflow-hidden text-midGray md:block"><i
+                            class="fa fa-times w-4" aria-hidden="true"></i></button>
                 </div>
             </div>
             <button onclick="burgerMenu()" class="hamburger md:hidden">
@@ -64,85 +97,150 @@
             </button>
 
         </div>
-        <h1 class="w-2/3 absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px] hyphens-manual">
+        <h1
+            class="w-2/3 absolute -z-10 top-1/2 left-4 -translate-y-1/2 flex flex-col gap-7 text-white text-[35px] tracking-[1.5px] leading-normal md:gap-9 md:text-[70px] md:left-11 md:leading-tight md:tracking-[3px] hyphens-manual">
             <span class="text-xs md:text-base">Projekte</span>
             Nachweis hoher Expertise und Leistungs&shy;fähigkeit unserer Mitarbeitenden
         </h1>
-        <img class="absolute bottom-9 left-1/2 -translate-x-1/2" src="../assets/Bilder/Arrows&Navigation/arrow-header.svg" alt="arrow down">
+        <img class="absolute bottom-9 left-1/2 -translate-x-1/2"
+            src="../assets/Bilder/Arrows&Navigation/arrow-header.svg" alt="arrow down">
     </header>
     <section class="bg-white">
         <div class="text-fade px-4 py-[75px] md:max-w-[842px] md:mx-auto md:py-[150px] md:mb-[100px]">
             <div class="text-content-fade flex flex-col justify-center gap-20 md:gap-[60px]">
                 <h2 class="text-[26px] tracking-[1.3px] leading-none md:text-[35px] md:leading-10 md:tracking-[1.75px]">
-                    Auch unsere Kunden und Partner sehen wir als erweitertes Team – denn nur so erreicht man exzellente Ergebnisse wie im folgenden zu sehen.
+                    Auch unsere Kunden und Partner sehen wir als erweitertes Team – denn nur so erreicht man exzellente
+                    Ergebnisse wie im folgenden zu sehen.
                 </h2>
                 <p class="text-[15px] leading-[22px] tracking-wide">
-                    Wir beherrschen die Prozessabläufe und das Schnittstellenmanagement im Projekt und sehen dies als die Grundlage einer optimierten und professionellen Projektabwicklung. Des weiteren verfügen wir über Kooperation- und Planungspartner aus allen Bereichen der Bauplanung und Bauabwicklung.
+                    Wir beherrschen die Prozessabläufe und das Schnittstellenmanagement im Projekt und sehen dies als
+                    die Grundlage einer optimierten und professionellen Projektabwicklung. Des weiteren verfügen wir
+                    über Kooperation- und Planungspartner aus allen Bereichen der Bauplanung und Bauabwicklung.
                 </p>
             </div>
         </div>
+        <div
+            class='flex flex-col gap-4 mt-[100px] mb-4 items-center justify-center md:mb-10 md:flex-row-reverse md:gap-10'>
+            <button class='px-5 py-4 flex items-center gap-9 rounded-[50px] border-2 border-mainBlack'>
+                <span class='text-[15px] leading-[22px] tracking-[0.75px]'>Alle Filter löschen</span>
+                <i class="fa fa-times text-2xl" aria-hidden="true"></i>
+            </button>
+            <button
+                class='px-5 py-4 flex items-center gap-9 rounded-[50px] border-2 bg-mainBlack text-white border-mainBlack'>
+                <span class='text-[15px] leading-[22px] tracking-[0.75px]'>Wohnungsbau</span>
+                <i class="fa fa-times text-2xl" aria-hidden="true"></i>
+            </button>
+        </div>
         <div class="flex flex-col items-center gap-4 px-4 mb-10 md:flex-row md:justify-center">
-            <div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
+            <div
+                class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
                 <span class="ml-5">Gebäudeart</span>
-                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt=""></button>
+                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg"
+                        alt=""></button>
                 <ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50">
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a>
+                    </li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a>
+                    </li>
                 </ul>
             </div>
-            <div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
+            <div
+                class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
                 <span class="ml-5">Leistung</span>
-                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt=""></button>
+                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg"
+                        alt=""></button>
                 <ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50">
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a>
+                    </li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a>
+                    </li>
                 </ul>
             </div>
-            <div class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
+            <div
+                class="project-dropdown cursor-pointer transition-none relative w-full h-[50px] rounded-3xl bg-lightGray flex justify-between items-center md:max-w-[250px]">
                 <span class="ml-5">Branche</span>
-                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg" alt=""></button>
+                <button><img class="mr-5" src="../assets/Bilder/Arrows&Navigation/arrow-open-close-content.svg"
+                        alt=""></button>
                 <ul class="absolute hidden overflow-hidden top-full rounded-b-3xl w-full z-50">
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
-                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Industriebau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Büro- & Verwaltungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Handel & Gewerbe</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Wohnungsbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Krankenhäuser & Pflegeheime</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Forschung & Lehre</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Schulen & Kindertagesstätten</a>
+                    </li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Sonderbauten</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Tiefbau & Ingenieurbau</a></li>
+                    <li class="group py-3 px-5 bg-lightGray border-t border-white"><a
+                            class="group-hover:text-mainRed font-['buch']" href="#">Bauen im Bestand & Sanierungen</a>
+                    </li>
                 </ul>
-            </div>  
+            </div>
         </div>
         <div class="grid grid-cols-1 gap-[75px] px-4 mb-[100px] md:grid-cols-2 md:gap-10">
             <div class="group md:relative md:overflow-hidden">
-               <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
+                <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
                     <div class="relative fade-in-image-container h-full ">
-                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-1.jpg" alt="">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-1.jpg"
+                            alt="">
                     </div>
-                    <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                    <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Wohnanlage Denkendorf</h4>
-               </a>
-               <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Wohnanlage Denkendorf</h4>
+                </a>
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                    
+
                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
                         <div class="flex flex-col gap-5">
                             <span>Gebäudeart Wohnungsbau</span>
@@ -153,129 +251,171 @@
                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
                         </div>
                     </div>
-                    <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-               </div>     
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
             </div>
             <div class="group md:relative md:overflow-hidden">
                 <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
-                     <div class="relative fade-in-image-container h-full ">
-                         <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-2.jpg" alt="">
-                     </div>
-                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Projekttitel</h4>
+                    <div class="relative fade-in-image-container h-full ">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-2.jpg"
+                            alt="">
+                    </div>
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Projekttitel</h4>
                 </a>
-                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                     
-                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                     </div>
-                     <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>     
-             </div>
-             <div class="group md:relative md:overflow-hidden">
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
+
+                    <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="group md:relative md:overflow-hidden">
                 <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
-                     <div class="relative fade-in-image-container h-full ">
-                         <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-3.jpeg" alt="">
-                     </div>
-                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen</h4>
+                    <div class="relative fade-in-image-container h-full ">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-3.jpeg"
+                            alt="">
+                    </div>
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Erweiterung Produktion Werk 4 Bau 50-53 Stuttgart-Zuffenhausen</h4>
                 </a>
-                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                     
-                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                     </div>
-                     <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>     
-             </div>
-             <div class="group md:relative md:overflow-hidden">
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
+
+                    <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="group md:relative md:overflow-hidden">
                 <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
-                     <div class="relative fade-in-image-container h-full ">
-                         <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-4.jpeg" alt="">
-                     </div>
-                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Projekttitel, der etwas länger ist</h4>
+                    <div class="relative fade-in-image-container h-full ">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-4.jpeg"
+                            alt="">
+                    </div>
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Projekttitel, der etwas länger ist</h4>
                 </a>
-                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                     
-                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                     </div>
-                     <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>     
-             </div>
-             <div class="group md:relative md:overflow-hidden">
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
+
+                    <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="group md:relative md:overflow-hidden">
                 <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
-                     <div class="relative fade-in-image-container h-full ">
-                         <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-5.jpeg" alt="">
-                     </div>
-                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Projekttitel</h4>
+                    <div class="relative fade-in-image-container h-full ">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-5.jpeg"
+                            alt="">
+                    </div>
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Projekttitel</h4>
                 </a>
-                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                     
-                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                     </div>
-                     <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>     
-             </div>
-             <div class="group md:relative md:overflow-hidden">
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
+
+                    <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="group md:relative md:overflow-hidden">
                 <a href="#" class="relative block w-full h-56 md:h-[400px] mb-5 md:mb-0">
-                     <div class="relative fade-in-image-container h-full ">
-                         <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-6.jpeg" alt="">
-                     </div>
-                     <span class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
-                     <h4 class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">Projekttitel, der etwas länger ist</h4>
+                    <div class="relative fade-in-image-container h-full ">
+                        <img class="w-full fade-in-image h-full object-cover" src="../assets/Bilder/houses/house-6.jpeg"
+                            alt="">
+                    </div>
+                    <span
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white flex items-center justify-center md:hidden"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></span>
+                    <h4
+                        class="hidden text-2xl absolute bottom-10 left-10 text-white font-semibold group-hover:bottom-[calc(100%-60px)] group-hover:translate-y-1/2 z-10 md:block">
+                        Projekttitel, der etwas länger ist</h4>
                 </a>
-                <div class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
-                     <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
-                     
-                     <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                         <div class="flex flex-col gap-5">
-                             <span>Gebäudeart Wohnungsbau</span>
-                             <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
-                         </div>
-                     </div>
-                     <a href="#" class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
-                </div>     
-             </div>
+                <div
+                    class="opacity-100 flex flex-col gap-4 md:absolute md:translate-y-full md:w-full md:h-full md:bg-darkBlue md:opacity-0 md:top-0 md:text-white md:p-10 md:pt-[125px] md:pl-8 md:gap-8 md:group-hover:translate-y-0 md:group-hover:opacity-100">
+                    <h4 class="text-2xl md:hidden">Wohnanlage Denkendorf</h4>
+
+                    <div class="flex items-start gap-4 text-[15px] tracking-[0.75px] leading-[22px] md:gap-10">
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                        <div class="flex flex-col gap-5">
+                            <span>Gebäudeart Wohnungsbau</span>
+                            <span> Auftraggeber Rommel SF Bau GmbH & Co.KG</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="absolute right-5 bottom-5 w-10 h-10 rounded-full bg-white hidden md:flex items-center justify-center"><img
+                            src="../assets/Bilder/Arrows&Navigation/arrow-textlinks.svg" alt=""></a>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -283,41 +423,51 @@
     <footer>
         <div class="pl-4 pr-11 py-20 bg-darkBlue text-white md:px-11  md:pb-12">
             <div class="md:max-w-[790px]">
-                <h2 class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:mb-[120px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
+                <h2
+                    class="flex flex-col gap-5 text-[26px] tracking-[0.3px] mb-[60px] md:mb-[120px] md:text-[35px] md:tracking-[1.75px] md:leading-[39px]">
                     <span class="text-[13px] tracking-[0.65px] md:text-base">Kontakt</span>
                     Sie planen ein Bauprojekt oder benötigen eine Beratung? <br> Dann sollten wir uns kennenlernen.
                 </h2>
                 <article class="flex flex-col text-xl leading-6 mb-7">
                     <p>BKSI GmbH <br> Ingenieurgesellschaft für Beratung & Planung im Bauwesen</p>
                 </article>
-                
+
                 <div class="flex  flex-col mb-[105px] gap-8 md:gap-28 md:mb-52 md:flex-row md:items-center">
                     <p> Schwieberdinger Straße 5 <br> 70435 Stuttgart</p>
                     <div class="flex flex-col text-xl leading-6 gap-2">
-                        <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span class="group-hover:text-mainRed">info@bksi.de</span></a>
-                        <a class="group font-normal" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span class="group-hover:text-mainRed">0711 / 36 53 38 - 30</span></a>
+                        <a class="group font-normal" href="mailto:info@bksi.de">E-Mail: <span
+                                class="group-hover:text-mainRed">info@bksi.de</span></a>
+                        <a class="group font-normal" href="tel:+: 0711 / 36 53 38 - 30">Telefon: <span
+                                class="group-hover:text-mainRed">0711 / 36 53 38 - 30</span></a>
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col md:flex-row md:items-center md:justify-between md:gap-8">
                 <div class="flex gap-8 mb-8 md:m-0">
-                    <a href="https://www.linkedin.com/company/bksi-gmbh/?originalSubdomain=de " class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                    <a href="https://www.linkedin.com/company/bksi-gmbh/?originalSubdomain=de "
+                        class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
                         <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-linkedin.svg" alt="">
                     </a>
-                    <a href="https://www.facebook.com/bksigmbh" class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                    <a href="https://www.facebook.com/bksigmbh"
+                        class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
                         <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-facebook.svg" alt="">
                     </a>
-                    <a href="https://www.instagram.com/bksi_gmbh/ " class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
-                        <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-instagram.svg" alt="">
+                    <a href="https://www.instagram.com/bksi_gmbh/ "
+                        class="flex group justify-center items-center w-[50px] aspect-square rounded-full bg-white hover:scale-110">
+                        <img class="group-hover:scale-90" src="../assets/Bilder/Footer/social-icon-instagram.svg"
+                            alt="">
                     </a>
                 </div>
                 <div class="flex gap-[52px] mb-[74px] md:m-0">
-                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="../src/impressium.html">Impressum</a>
+                    <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed"
+                        href="../src/impressium.html">Impressum</a>
                     <a class="text-[15px] leading-[19px] tracking-[0.75px] hover:text-mainRed" href="#">Datenschutz</a>
                 </div>
-                <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">© 2022 BKSI GmbH</span>
-                <a class="block" href="https://www.dgnb.de/de/index.php"><img class="w-1/2 md:w-full" src="../assets/Bilder/Footer/logo-dgnb.png" alt=""></a>
+                <span class="block text-[15px] leading-[19px] tracking-[0.75px] opacity-50 mb-[60px] md:m-0">© 2022 BKSI
+                    GmbH</span>
+                <a class="block" href="https://www.dgnb.de/de/index.php"><img class="w-1/2 md:w-full"
+                        src="../assets/Bilder/Footer/logo-dgnb.png" alt=""></a>
             </div>
 
         </div>
@@ -326,4 +476,5 @@
     <script src="../js/lazy-loading.js"></script>
     <script src="../js/dropdown.js"></script>
 </body>
+
 </html>
