@@ -5,5 +5,8 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.7"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./style/style.css -o ./tailwindcss/style.css --watch"
   }
 }
