@@ -961,24 +961,20 @@ a[href^="tel:"],
   width: fit-content;
 }
 
-.w-\[43\.6\%\] {
-  width: 43.6%;
-}
-
-.w-\[56\.4\%\] {
-  width: 56.4%;
-}
-
-.w-\[calc\(100\%-150px\)\] {
-  width: calc(100% - 150px);
+.w-\[51\.6\%\] {
+  width: 51.6%;
 }
 
 .w-\[calc\(100\%-40px\)\] {
   width: calc(100% - 40px);
 }
 
-.w-\[51\.6\%\] {
-  width: 51.6%;
+.w-\[43\.6\%\] {
+  width: 43.6%;
+}
+
+.w-\[56\.4\%\] {
+  width: 56.4%;
 }
 
 .min-w-\[250px\] {
@@ -1750,16 +1746,17 @@ ul.arrow>li:before {
 
 .fade-in-image-container {
   position: relative;
+  overflow: hidden;
 }
 
 .fade-in-image {
-  transform: translateX(-100%);
+  transform: translateY(100%);
   opacity: 0;
   transition: all 1.2s cubic-bezier(.645, .045, .355, 1);
 }
 
 .fade-in-image-container.active .fade-in-image {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
