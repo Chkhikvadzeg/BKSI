@@ -149,7 +149,6 @@ ul.arrow>li:before {
 }
 
 .fade-in-image {
-    position: absolute;
     transform: translateX(-100%);
     opacity: 0;
     transition: all 1.2s cubic-bezier(.645, .045, .355, 1);
