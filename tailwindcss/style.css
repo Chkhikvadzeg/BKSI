@@ -815,6 +815,10 @@ a[href^="tel:"],
   margin-bottom: 70px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -1091,6 +1095,10 @@ a[href^="tel:"],
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1420,6 +1428,10 @@ a[href^="tel:"],
 
 .pl-14 {
   padding-left: 3.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -2185,6 +2197,10 @@ ul.arrow>li:before {
     margin-top: 3rem;
   }
 
+  .md\:ml-\[150px\] {
+    margin-left: 150px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2569,6 +2585,10 @@ ul.arrow>li:before {
 
   .md\:pl-10 {
     padding-left: 2.5rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .md\:text-base {
